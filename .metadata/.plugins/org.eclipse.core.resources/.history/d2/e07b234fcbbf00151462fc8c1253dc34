@@ -503,20 +503,13 @@ public class QuickView {
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				
 				driver.findElement(By.xpath("//span[text()='Log in']")).click();
-				
-				
-				
-				driver.findElement(By.linkText("Log in")).click();
+				//driver.findElement(By.linkText("Log in")).click();
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-				
-			
-				
-				
-				
-				driver.findElement(By.name("username_or_email")).sendKeys("test92010015@gmail.com");
+				driver.findElement(By.name("username_or_email")).sendKeys("tester96010001@gmail.com");
 			      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-				driver.findElement(By.name("password")).sendKeys("zaq123wsx");
+				driver.findElement(By.name("password")).sendKeys("p@blicis!");
 				 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				 //driver.findElement(By.linkText("Log in")).click();
 				 driver.findElement(By.xpath("//span[text()='Log in']")).click();
 				driver.manage().timeouts().implicitlyWait(85, TimeUnit.SECONDS);
 				  Thread.sleep(1000);
