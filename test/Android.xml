@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Preference Center">
+   <test name="Preference Center Galaxy S5">
+   
+ 
+      <classes>
+         <class name="brand.appium.ForgotPassword" />
+      </classes>
+      
+   </test>
+   
+
+   
+   
+   
+   
+   
+  
+</suite>

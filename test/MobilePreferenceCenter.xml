@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Preference Center">
+   <test name="Preference Center Galaxy S5">
+   
+      <parameter name="browser" value="galaxyS5"/> 
+      
+      <classes>
+         <class name="brand.test.MobilePreferenceCenter" />
+      </classes>
+      
+   </test>
+   
+     <test name="Preference Center iPhone 5S">
+   
+      <parameter name="browser" value=" iPhone5S"/> 
+      
+      <classes>
+         <class name="brand.test.MobilePreferenceCenter" />
+      </classes>
+      
+   </test>
+   
+   
+   
+   
+   
+  
+</suite>

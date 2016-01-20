@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Write Review]">
+  <parameter name="browser" value="windows7IE10"/>
+  <test name="Write Review(failed)">
+    <parameter name="browser" value="windows7IE10"/>
+    <classes>
+      <class name="brand.test.WriteReviewCrest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="previewErrors"/>
+          <include name="completeReview"/>
+          <include name="previewPopup"/>
+        </methods>
+      </class> <!-- brand.test.WriteReviewCrest -->
+    </classes>
+  </test> <!-- Write Review(failed) -->
+</suite> <!-- Failed suite [Write Review] -->

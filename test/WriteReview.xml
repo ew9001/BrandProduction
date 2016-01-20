@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Write Review">
+   <test name="Write Review">
+   
+      <parameter name="browser" value="windows7IE10"/> 
+      
+      <classes>
+         <class name="brand.test.WriteReviewCrest" />
+      </classes>
+      
+   </test>
+</suite>
+   
+   
+   
+   
+  

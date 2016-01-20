@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Preference Center]">
+  <parameter name="browser" value=" iPhone5S"/>
+  <test name="Preference Center iPhone 5S(failed)">
+    <parameter name="browser" value=" iPhone5S"/>
+    <classes>
+      <class name="brand.test.MobilePreferenceCenter">
+        <methods>
+          <include name="setPassword"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="loginAndLogout"/>
+          <include name="resetPassword"/>
+          <include name="validLogin"/>
+          <include name="editProfile"/>
+          <include name="registerPage"/>
+          <include name="invalidLogin"/>
+        </methods>
+      </class> <!-- brand.test.MobilePreferenceCenter -->
+    </classes>
+  </test> <!-- Preference Center iPhone 5S(failed) -->
+</suite> <!-- Failed suite [Preference Center] -->
