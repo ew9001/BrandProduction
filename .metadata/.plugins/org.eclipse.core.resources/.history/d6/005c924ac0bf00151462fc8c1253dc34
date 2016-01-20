@@ -123,7 +123,7 @@ public class QuickView {
 		    
 		    System.out.println("Let me look at the email popup");
 		    
-		   // driver.findElement(By.id(" btnsend")).click();
+		   // driver.findElement(By.id("btnsend")).click();
 		  //  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		  //  name=""+ browser+"/" + "popup" +"_"+ "error" + ".png";
 		//    takeScreeshot(name); 
