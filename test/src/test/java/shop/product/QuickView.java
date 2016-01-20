@@ -117,6 +117,8 @@ public class QuickView {
 		    driver.findElement(By.xpath("//*[contains(text(), 'mail')]")).click();
 		    name=""+ browser+"/" + "popup" +"_"+ "email" + ".png";
 		    driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
+		    Thread.sleep(1000);
+		    Thread.sleep(2000);
 		    takeScreeshot(name); 
 		    
 		    System.out.println("Let me look at the email popup");
