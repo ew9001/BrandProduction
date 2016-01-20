@@ -506,7 +506,7 @@ public class QuickView {
 				
 				
 				
-				
+				driver.findElement(By.linkText("Log in")).click();
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				
 			
