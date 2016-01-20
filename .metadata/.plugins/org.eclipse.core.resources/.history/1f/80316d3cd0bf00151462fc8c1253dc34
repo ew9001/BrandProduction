@@ -68,8 +68,6 @@ public class QuickView {
 		 
 		 List<WebElement> buttons = driver.findElements(By.xpath("//*[contains(@id, 'rptSMLinks_smHyperLink')]"));
 		//*[@id="phdesktopbody_0_phdesktoparticlesharerecommend_1_rptSMLinks_smHyperLink_0"]
-		 
-		 //phdesktopbody_0_phdesktopsharemail_0_rptSMLinks_smHyperLink_0
 		    System.out.println("You have  " + buttons.size() + " social icon shares on the article page");
 		    socialCount=buttons.size();
 	}
@@ -84,7 +82,7 @@ public class QuickView {
 		  driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
  
 		  driver.findElement(By.id(component)).click();
-		  driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
+		  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		    name=""+ browser+"/" + "popup" +"_"+ timeStamp + ".png";
 		    takeScreeshot(name); 
 		  //*[@id="phdesktopbody_0_phdesktoparticlesharerecommend_1_rptSMLinks_smHyperLink_0"]
