@@ -469,7 +469,6 @@ public class QuickView {
 		 caps.setCapability("browserstack.selenium_version", "2.48.2");
 		 //caps.setCapability("browserstack.selenium_version", "2.47.1");
 		 caps.setCapability("acceptSslCerts", "true");
-		 caps.setCapability("browserstack.local", "true");
 		  driver = new RemoteWebDriver(new URL(URL), caps);
 	      browser="Firefox42";
 	      
