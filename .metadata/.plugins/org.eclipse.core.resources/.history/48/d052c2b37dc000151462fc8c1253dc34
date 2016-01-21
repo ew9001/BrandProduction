@@ -115,14 +115,10 @@ public class QuickView {
 		  String alt = email.getCssValue("alt");
 		  
 		//*[@id="phdesktopbody_0_phdesktoparticlesharerecommend_2_anchrShareEmail"]
-		
+		  softAssert.assertEquals("email",alt);  
+		  email.click();
 		    driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
-		    JavascriptExecutor jse = (JavascriptExecutor)driver;
-		    jse.executeScript("document.getElementById('phdesktopbody_0_phdesktoparticlesharerecommend_2_anchrShareEmail').click();");
-			driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
-			 Thread.sleep(1000);
-			 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		    
+		
 		    driver.findElement(By.xpath("//*[contains(text(), 'mail')]")).click();
 		    name=""+ System.getProperty("Browser")+"/" + "popup" +"_"+ "email" + ".png";
 		    driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
@@ -141,7 +137,7 @@ public class QuickView {
 		    Thread.sleep(1000);
 		    Thread.sleep(1000);
 		    
-		    
+		    JavascriptExecutor jse = (JavascriptExecutor)driver;
 		    System.out.println("Let me look when I submit blank form");
 		    jse.executeScript("document.getElementById('btnsend').click();");
 		    
