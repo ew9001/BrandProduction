@@ -242,7 +242,7 @@ public class QuickView {
 	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	  Thread.sleep(1000);
 	  try{
-		  WebElement email = driver.findElement(By.id("phdesktopbody_0_phdesktoparticlesharerecommend_2_anchrShareEmail"));  
+		  WebElement email = driver.findElement(By.xpath("//td[contains(text(),'mail')]")) ;
 		  email.click();
 		  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		  driver.findElement(By.id("phdesktopbody_0_phdesktoparticlesharerecommend_2_txtYourName")).sendKeys(name1);
