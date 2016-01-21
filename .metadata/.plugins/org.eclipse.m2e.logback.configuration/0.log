@@ -46,3 +46,15 @@
 2016-01-21 13:42:45,128 [Worker-352] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/main/resources
 2016-01-21 13:42:45,136 [Worker-352] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-01-21 13:42:45,137 [Worker-352] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/test/resources
+2016-01-21 13:49:19,926 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-21 13:49:19,927 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/main/resources
+2016-01-21 13:49:19,928 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-21 13:49:19,928 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/test/resources
+2016-01-21 13:53:13,306 [Worker-360] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-21 13:53:13,306 [Worker-360] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/main/resources
+2016-01-21 13:53:13,308 [Worker-360] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-21 13:53:13,308 [Worker-360] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/test/resources
+2016-01-21 13:53:36,228 [Worker-360] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-21 13:53:36,228 [Worker-360] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/main/resources
+2016-01-21 13:53:36,230 [Worker-360] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-21 13:53:36,230 [Worker-360] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/test/resources

@@ -8,3 +8,9 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.eclipse.core.net 1 0 2016-01-20 16:50:08.100
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-01-21 13:52:49.106
+!MESSAGE No valid Android XML Editor Delegate found for file /test/Articles.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-21 13:53:36.422
+!MESSAGE No projects found for [/Users/pktqa/Desktop/BrandProduction/test/Articles.xml]
