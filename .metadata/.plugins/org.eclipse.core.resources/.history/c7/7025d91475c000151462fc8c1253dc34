@@ -11,17 +11,14 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -49,7 +46,7 @@ public class QuickView {
 	  public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
 	  public static String browser;
 	public String brand;
-	public static String name,browser_type;
+	public static String name;
 	public static int counter=1;
 	public static int variant=1;
 	public static int socialCount;
@@ -459,123 +456,82 @@ public class QuickView {
   @BeforeMethod
 
   public void beforeClass() throws InterruptedException, IOException {
-	  if (System.getProperty("Browser").equals("safari")) {
-		  driver=browserSafari();
-		  
-		}
 	  
-	  else if (System.getProperty("Browser").equals("Chrome")) {
-		  driver=browserChrome();
-		  
-		}
-	  
-	  else if (System.getProperty("Browser").equals("firefoxMAC")) {
-		  driver=browserFirefoxYasomin();
-		  
-		}
-	  
-	  else if (System.getProperty("Browser").equals("browserIE11")) {
-		  driver=browserIE11();
-		   
-		}
-	  else if (System.getProperty("Browser").equals("browserWindows8IE10")) {
-		  driver=browserWindows8IE10();
-		   
-		}
-	  
-	  else if (System.getProperty("Browser").equals("browserWindows10IE11")) {
-		  driver=browserWindows10IE11();
-		   
-		}
-	  else if (System.getProperty("Browser").equals("browserIE10")) {
-		  driver=browserIE10();
-		   
-		}
-	  
-	  else if (System.getProperty("Browser").equals("firefox")) {
-		  driver=browserFirefox();
-		   
-		}
-	  
-	  else if (System.getProperty("Browser").equals("browserIpad")) {
-		  driver=browserIpad();
-		   
-		}
-	  
-	  else if (System.getProperty("Browser").equals("browserAndroidTablet")) {
-		  driver=browserAndroidTablet();
-		   
-		}
+	  System.out.println("Let me run in Firefox");
+		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
+		 DesiredCapabilities caps = new DesiredCapabilities();
+		 caps.setCapability("browser", "Firefox");
+		 caps.setCapability("browser_version", "43.0");
+		 caps.setCapability("os", "Windows");
+		 caps.setCapability("os_version", "7");
+		 caps.setCapability("resolution", "1024x768");
+		 caps.setCapability("browserstack.debug", "true");
+		 caps.setCapability("browserstack.selenium_version", "2.48.2");
+		 //caps.setCapability("browserstack.selenium_version", "2.47.1");
+		 caps.setCapability("acceptSslCerts", "true");
+		 caps.setCapability("browserstack.local", "true");
+		  driver = new RemoteWebDriver(new URL(URL), caps);
+	      browser="Firefox42";
+	      
+	     
 
-
-	  
-	  String name=""+ browser+"/" + browser +"_"+ counter + "_" + "Successful-Completed-Capture.png";
 	 
-		  System.out.println("Let me see which one get tested " +browser);
-		  System.out.println("Image Name " +name);
-
-		  
-	 
-	 
+	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	      Thread.sleep(1000);
+	      Thread.sleep(1000);
 	      driver.manage().window().maximize();
 	      Thread.sleep(1000);
-
-	    
-				
-	     driver.get(System.getProperty("BrandUrl"));
-  }
-
-
-  public static void setupSocial() throws InterruptedException
-  {
-	  
-	  Thread.sleep(1000);
-      Thread.sleep(1000);
-      Thread.sleep(1000);
-      
-      driver.get("http://facebook.com");
-      
-		driver.findElement(By.id("email")).sendKeys("epaesye_shepardman_1453031335@tfbnw.net");
-		driver.findElement(By.id("pass")).sendKeys("p@blicis1");
-		driver.findElement(By.id("loginbutton")).click();
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		
-		
-	      driver.get("http://gmail.com");
+	      Thread.sleep(1000);
+	      Thread.sleep(1000);
+	      Thread.sleep(1000);
+	      Thread.sleep(1000);
 	      
-			driver.findElement(By.id("Email")).sendKeys("tester96010001@gmail.com");
-			driver.findElement(By.id("next")).click();
-		      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			driver.findElement(By.id("Passwd")).sendKeys("p@blicis!");
-			driver.findElement(By.id("signIn")).click();
+	      driver.get("http://facebook.com");
+	      
+			driver.findElement(By.id("email")).sendKeys("epaesye_shepardman_1453031335@tfbnw.net");
+			driver.findElement(By.id("pass")).sendKeys("p@blicis1");
+			driver.findElement(By.id("loginbutton")).click();
 			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			
 			
-			driver.get("https://www.pinterest.com/");
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		      driver.get("http://gmail.com");
+		      
+				driver.findElement(By.id("Email")).sendKeys("tester96010001@gmail.com");
+				driver.findElement(By.id("next")).click();
+			      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				driver.findElement(By.id("Passwd")).sendKeys("p@blicis!");
+				driver.findElement(By.id("signIn")).click();
+				driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+				
+				
+				driver.get("https://www.pinterest.com/");
+				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				
+				driver.findElement(By.xpath("//span[text()='Log in']")).click();
+				
+				
+				
+				
+				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				
 			
-			driver.findElement(By.xpath("//span[text()='Log in']")).click();
-			
-			
-			
-			
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			
-		
-			
-			
-			
-			driver.findElement(By.name("username_or_email")).sendKeys("test92010015@gmail.com");
-		      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			driver.findElement(By.name("password")).sendKeys("zaq123wsx");
-			 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			 driver.findElement(By.xpath("//span[text()='Log in']")).click();
-			driver.manage().timeouts().implicitlyWait(85, TimeUnit.SECONDS);
-			  Thread.sleep(1000);
-			  Thread.sleep(1000);
-			  Thread.sleep(1000);
-	  
+				
+				
+				
+				driver.findElement(By.name("username_or_email")).sendKeys("test92010015@gmail.com");
+			      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				driver.findElement(By.name("password")).sendKeys("zaq123wsx");
+				 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				 driver.findElement(By.xpath("//span[text()='Log in']")).click();
+				driver.manage().timeouts().implicitlyWait(85, TimeUnit.SECONDS);
+				  Thread.sleep(1000);
+				  Thread.sleep(1000);
+				  Thread.sleep(1000);
+				
+	            driver.get(System.getProperty("BrandUrl"));
   }
+
+
   
   public static WebDriver takeScreeshot(String name) throws IOException
 	 {
@@ -598,333 +554,6 @@ public class QuickView {
 		    FileUtils.copyFile(screenshot, new File(name));
 		    
 		    return driver;
-	 }
-  
-  public WebDriver browserIE11() throws MalformedURLException  
-	 {  
-	  
-		 System.out.println("Let me run mobileGalaxyS3");
-		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
-		 DesiredCapabilities caps = new DesiredCapabilities();
-		 caps.setCapability("browser", "IE");
-		 caps.setCapability("browser_version", "11.0");
-		 caps.setCapability("os", "Windows");
-		 caps.setCapability("os_version", "7");
-		 caps.setCapability("resolution", "1024x768");
-		 caps.setCapability("browserstack.debug", "true");
-		 caps.setCapability("browserstack.local", "true");
-		 caps.setCapability("acceptSslCerts", "true");
-		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-		 caps.setCapability("browserstack.1Identifier", "Cascade");
-		   caps.setCapability("browserstack.local", "true");
-		    driver = new RemoteWebDriver(new URL(URL), caps);
-	      System.out.println("Let me run IE11");
-	      browser_type="browserIE11";
-	      System.out.println("Let me see which one get tested" +browser_type);
-	      System.out.println("Let me see which one get tested" +driver);
-	      driver.get("https://m.crest.com");
-	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	      
-	      return driver;
-	   
-	    
-	      
-	 } 
-	 
-	 public WebDriver browserIE10() throws MalformedURLException  
-	 {  
-	  
-		 System.out.println("Let me run mobileGalaxyS3");
-		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
-		 DesiredCapabilities caps = new DesiredCapabilities();
-		 caps.setCapability("browser", "IE");
-		 caps.setCapability("browser_version", "10.0");
-		 caps.setCapability("os", "Windows");
-		 caps.setCapability("os_version", "7");
-		 caps.setCapability("resolution", "1024x768");
-		 caps.setCapability("browserstack.debug", "true");
-		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-		 caps.setCapability("acceptSslCerts", "true");
-		   caps.setCapability("browserstack.local", "true");
-		    driver = new RemoteWebDriver(new URL(URL), caps);
-	      System.out.println("Let me run IE10");
-	      browser_type="browserIE10";
-	      System.out.println("Let me see which one get tested" +browser_type);
-	      System.out.println("Let me see which one get tested" +driver);
-	      driver.get("http://www.publicis.com/");
-	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	   
-	      return driver;
-	   
-	    
-	      
-	 } 
-	 
-	 
-	 public WebDriver browserWindows8IE10() throws MalformedURLException  
-	 {  
-	  
-		 System.out.println("Let me run Windows 8 IE 10 ");
-		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
-		 DesiredCapabilities caps = new DesiredCapabilities();
-		 caps.setCapability("browser", "IE");
-		 caps.setCapability("browser_version", "10.0");
-		 caps.setCapability("os", "Windows");
-		 caps.setCapability("os_version", "8");
-		 caps.setCapability("resolution", "1024x768");
-		 caps.setCapability("browserstack.debug", "true");
-		 caps.setCapability("acceptSslCerts", "true");
-		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-	
-		    driver = new RemoteWebDriver(new URL(URL), caps);
-	      System.out.println("Let me run Windows 8 IE10");
-	      browser_type="browserWindows8IE10";
-	      System.out.println("Let me see which browser I'm using " +browser_type);
-	      System.out.println("Let me see which driver I'm using" +driver);
-	      driver.get("http://yahoo.com/");
-	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	      caps.setCapability("browserstack.local", "true");
-	      return driver;
-	   
-	    
-	      
-	 } 
-	 
-	 
-	 public WebDriver browserIpad() throws MalformedURLException  
-	 {  
-	  
-		 System.out.println("Let me run iPAD air ");
-		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
-		 DesiredCapabilities caps = new DesiredCapabilities();
-		 caps.setCapability("browserName", "iPad");
-		 caps.setCapability("platform", "MAC");
-		 caps.setCapability("device", "iPad Air");
-		 caps.setCapability("browserstack.debug", "true");
-		 caps.setCapability("acceptSslCerts", "true");
-		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-		 caps.setCapability("browserstack.local", "true");
-		    driver = new RemoteWebDriver(new URL(URL), caps);
-	      System.out.println("Let me run iPAD air");
-	      browser_type="browserWindows8IE10";
-	      System.out.println("Let me see which browser I'm using " +browser_type);
-	      System.out.println("Let me see which driver I'm using" +driver);
-	      driver.get("http://yahoo.com/");
-	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	      
-	      
-	      return driver;
-	   
-	    
-	      
-	 } 
-	 
-	 
-	 public WebDriver browserWindows10IE11() throws MalformedURLException  
-	 {  
-	  
-		 System.out.println("Let me run Windows 10 IE 11 ");
-		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
-		 DesiredCapabilities caps = new DesiredCapabilities();
-		 caps.setCapability("browser", "IE");
-		 caps.setCapability("browser_version", "11.0");
-		 caps.setCapability("os", "Windows");
-		 caps.setCapability("os_version", "10");
-		 caps.setCapability("resolution", "1024x768");
-		 caps.setCapability("browserstack.debug", "true");
-		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-		 caps.setCapability("acceptSslCerts", "true");
-		 caps.setCapability("browserstack.local", "true");
-		    driver = new RemoteWebDriver(new URL(URL), caps);
-	      System.out.println("Let me run Windows 8 IE11");
-	      browser_type="browserWindows8IE10";
-	      System.out.println("Let me see which browser I'm using " +browser_type);
-	      System.out.println("Let me see which driver I'm using" +driver);
-	      driver.get("http://yahoo.com/");
-	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	      
-	      return driver;
-	   
-	    
-	      
-	 } 
-	 
-	 public WebDriver browserChrome() throws MalformedURLException  
-	 {  
-	  
-		 System.out.println("Let me run mobileGalaxyS3");
-		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
-		 DesiredCapabilities caps = new DesiredCapabilities();
-		 caps.setCapability("browser", "Chrome");
-		 caps.setCapability("browser_version", "39.0");
-		 caps.setCapability("os", "OS X");
-		 caps.setCapability("os_version", "Mountain Lion");
-		 caps.setCapability("resolution", "1024x768");
-		 caps.setCapability("browserstack.debug", "true");
-		 caps.setCapability("acceptSslCerts", "true");
-		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-		 caps.setCapability("browserstack.local", "true");
-		    driver = new RemoteWebDriver(new URL(URL), caps);
-	      System.out.println("Let me run Chrome 39 MAC OS");
-	      browser_type="browserChrome39";
-	      System.out.println("Let me see which one get tested" +browser_type);
-	      System.out.println("Let me see which one get tested" +driver);
-	      driver.get("http://www.publicis.com/");
-	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	      driver.manage().window().maximize();
-	      
-	      return driver;
-	   
-	    
-	      
-	 }
-	 
-	 public WebDriver browserFirefox() throws MalformedURLException  
-	 {  
-	  
-		 System.out.println("Let me run mobileGalaxyS3");
-		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
-		 DesiredCapabilities caps = new DesiredCapabilities();
-		 caps.setCapability("browser", "Firefox");
-		 caps.setCapability("browser_version", "39.0");
-		 caps.setCapability("os", "OS X");
-		 caps.setCapability("os_version", "Mavericks");
-		 caps.setCapability("resolution", "1024x768");
-		 caps.setCapability("browserstack.debug", "true");
-		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-		 caps.setCapability("browserstack.local", "true");
-		 caps.setCapability("acceptSslCerts", "true");
-		    driver = new RemoteWebDriver(new URL(URL), caps);
-	      System.out.println("Let me run Firefox  39 MAC OS");
-	      browser_type="browserChrome39";
-	      System.out.println("Let me see which one get tested" +browser_type);
-	      System.out.println("Let me see which one get tested" +driver);
-	      driver.get("http://www.publicis.com/");
-	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	      driver.manage().window().maximize();
-	      
-	      return driver;
-	   
-	    
-	      
-	 }
-	 
-	 public WebDriver browserAndroidTablet() throws MalformedURLException  
-	 {  
-	  
-		 System.out.println("Let me run Galaxy Tablet");
-		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
-		 DesiredCapabilities caps = new DesiredCapabilities();
-		 caps.setCapability("browserName", "android");
-		 caps.setCapability("platform", "ANDROID");
-		 caps.setCapability("device", "Samsung Galaxy Note 10.1");
-		 caps.setCapability("browserstack.debug", "true");
-		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-		 caps.setCapability("browserstack.local", "true");
-		 caps.setCapability("acceptSslCerts", "true");
-		    driver = new RemoteWebDriver(new URL(URL), caps);
-	      System.out.println("Let me run Firefox  39 MAC OS");
-	      browser_type="browserChrome39";
-	      System.out.println("Let me see which one get tested" +browser_type);
-	      System.out.println("Let me see which one get tested" +driver);
-	      driver.get("http://www.publicis.com/");
-	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	      driver.manage().window().maximize();
-	      
-	      return driver;
-	   
-	    
-	      
-	 }
-	 
-	 public WebDriver browserFirefoxYasomin() throws MalformedURLException  
-	 {  
-	  
-		 System.out.println("Let me run Yasomin");
-		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
-		 DesiredCapabilities caps = new DesiredCapabilities();
-		 caps.setCapability("browser", "Firefox");
-		 caps.setCapability("browser_version", "40.0");
-		 caps.setCapability("os", "OS X");
-		 caps.setCapability("os_version", "Yosemite");
-		 caps.setCapability("resolution", "1024x768");
-		 caps.setCapability("browserstack.debug", "true");
-		 caps.setCapability("acceptSslCerts", "true");
-		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-		 caps.setCapability("browserstack.local", "true");
-		    driver = new RemoteWebDriver(new URL(URL), caps);
-	      System.out.println("Let me run Firefox  39 MAC OS");
-	      browser_type="browserFirefoxYasomin";
-	      System.out.println("Let me see which one get tested" +browser_type);
-	      System.out.println("Let me see which one get tested" +driver);
-	      driver.get("http://www.publicis.com/");
-	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	      driver.manage().window().maximize();
-	      
-	      return driver;
-	   
-	    
-	      
-	 }
-	 
-	 
-	 
-	 public WebDriver browserSafari() throws MalformedURLException  
-	 {  
-	  
-		 browser_type="safari";
-		 String URL = "http://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
-		 DesiredCapabilities caps = new DesiredCapabilities();
-		 caps.setCapability("browser", "Safari");
-		 caps.setCapability("browser_version", "8.0");
-		 caps.setCapability("os", "OS X");
-		 caps.setCapability("os_version", "Yosemite");
-		 caps.setCapability("resolution", "1024x768");
-		 caps.setCapability("browserstack.debug", "true");
-		 caps.setCapability("acceptSslCerts", "true");
-		 caps.setCapability("chrome.switches", Arrays.asList("--ignore-certificate-errors"));
-		 caps.setCapability("browserstack.local", "true");
-		    driver = new RemoteWebDriver(new URL(URL), caps);
-	      System.out.println("Let me run Safari");
-	      driver.manage().window().maximize();
-	      driver.get("https://dawn-dish.com/en-us/resetpasswordpage");
-	      driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
-		    
-		    driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
-		    
-		    driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
-		    
-		    //assign key board object
-		    //   Keyboard keyboard=((HasInputDevices) driver).getKeyboard();
-		       //enter a key
-		     //  keyboard.pressKey(Keys.ENTER);
-	      
-		    try 
-		    {
-		        //Handle the alert pop-up using seithTO alert statement
-		        Alert alert = driver.switchTo().alert();
-
-		        //Print alert is present
-		        System.out.println("Alert is present");
-
-		        //get the message which is present on pop-up
-		        String message = alert.getText();
-
-		        //print the pop-up message
-		        System.out.println(message);
-
-		        alert.sendKeys("");
-		        //Click on OK button on pop-up
-		        alert.accept();
-		    } 
-		    catch (NoAlertPresentException e) 
-		    {
-		        //if alert is not present print message
-		        System.out.println("alert is not present");
-		    }
-	      return driver;
-	   
-	    
 	 }
 
 }

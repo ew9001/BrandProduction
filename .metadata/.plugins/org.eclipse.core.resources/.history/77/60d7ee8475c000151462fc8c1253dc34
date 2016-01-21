@@ -516,13 +516,36 @@ public class QuickView {
 
 		  
 	 
+	  System.out.println("Let me run get driver "+driver);
+
+	  System.out.println("Let me run in Firefox");
+		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
+		 DesiredCapabilities caps = new DesiredCapabilities();
+		 caps.setCapability("browser", "Firefox");
+		 caps.setCapability("browser_version", "43.0");
+		 caps.setCapability("os", "Windows");
+		 caps.setCapability("os_version", "7");
+		 caps.setCapability("resolution", "1024x768");
+		 caps.setCapability("browserstack.debug", "true");
+		 caps.setCapability("browserstack.selenium_version", "2.48.2");
+		 //caps.setCapability("browserstack.selenium_version", "2.47.1");
+		 caps.setCapability("acceptSslCerts", "true");
+		 caps.setCapability("browserstack.local", "true");
+		  driver = new RemoteWebDriver(new URL(URL), caps);
+	      browser="Firefox42";
+	      
+	     
+
 	 
+	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	      Thread.sleep(1000);
+	      Thread.sleep(1000);
 	      driver.manage().window().maximize();
 	      Thread.sleep(1000);
-
+	      Thread.sleep(1000);
 	    
 				
-	     driver.get(System.getProperty("BrandUrl"));
+	            driver.get(System.getProperty("BrandUrl"));
   }
 
 
@@ -616,7 +639,6 @@ public class QuickView {
 		 caps.setCapability("acceptSslCerts", "true");
 		 caps.setCapability("browserstack.selenium_version", "2.47.1");
 		 caps.setCapability("browserstack.1Identifier", "Cascade");
-		   caps.setCapability("browserstack.local", "true");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run IE11");
 	      browser_type="browserIE11";
@@ -645,7 +667,6 @@ public class QuickView {
 		 caps.setCapability("browserstack.debug", "true");
 		 caps.setCapability("browserstack.selenium_version", "2.47.1");
 		 caps.setCapability("acceptSslCerts", "true");
-		   caps.setCapability("browserstack.local", "true");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run IE10");
 	      browser_type="browserIE10";
@@ -653,7 +674,7 @@ public class QuickView {
 	      System.out.println("Let me see which one get tested" +driver);
 	      driver.get("http://www.publicis.com/");
 	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	   
+	      
 	      return driver;
 	   
 	    
@@ -683,7 +704,7 @@ public class QuickView {
 	      System.out.println("Let me see which driver I'm using" +driver);
 	      driver.get("http://yahoo.com/");
 	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	      caps.setCapability("browserstack.local", "true");
+	      
 	      return driver;
 	   
 	    
@@ -703,7 +724,7 @@ public class QuickView {
 		 caps.setCapability("browserstack.debug", "true");
 		 caps.setCapability("acceptSslCerts", "true");
 		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-		 caps.setCapability("browserstack.local", "true");
+	
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run iPAD air");
 	      browser_type="browserWindows8IE10";
@@ -711,7 +732,6 @@ public class QuickView {
 	      System.out.println("Let me see which driver I'm using" +driver);
 	      driver.get("http://yahoo.com/");
 	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	      
 	      
 	      return driver;
 	   
@@ -734,7 +754,6 @@ public class QuickView {
 		 caps.setCapability("browserstack.debug", "true");
 		 caps.setCapability("browserstack.selenium_version", "2.47.1");
 		 caps.setCapability("acceptSslCerts", "true");
-		 caps.setCapability("browserstack.local", "true");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run Windows 8 IE11");
 	      browser_type="browserWindows8IE10";
@@ -763,7 +782,6 @@ public class QuickView {
 		 caps.setCapability("browserstack.debug", "true");
 		 caps.setCapability("acceptSslCerts", "true");
 		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-		 caps.setCapability("browserstack.local", "true");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run Chrome 39 MAC OS");
 	      browser_type="browserChrome39";
@@ -792,7 +810,7 @@ public class QuickView {
 		 caps.setCapability("resolution", "1024x768");
 		 caps.setCapability("browserstack.debug", "true");
 		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-		 caps.setCapability("browserstack.local", "true");
+			
 		 caps.setCapability("acceptSslCerts", "true");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run Firefox  39 MAC OS");
@@ -820,7 +838,7 @@ public class QuickView {
 		 caps.setCapability("device", "Samsung Galaxy Note 10.1");
 		 caps.setCapability("browserstack.debug", "true");
 		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-		 caps.setCapability("browserstack.local", "true");
+			
 		 caps.setCapability("acceptSslCerts", "true");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run Firefox  39 MAC OS");
@@ -851,7 +869,7 @@ public class QuickView {
 		 caps.setCapability("browserstack.debug", "true");
 		 caps.setCapability("acceptSslCerts", "true");
 		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-		 caps.setCapability("browserstack.local", "true");
+			
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run Firefox  39 MAC OS");
 	      browser_type="browserFirefoxYasomin";
@@ -883,7 +901,6 @@ public class QuickView {
 		 caps.setCapability("browserstack.debug", "true");
 		 caps.setCapability("acceptSslCerts", "true");
 		 caps.setCapability("chrome.switches", Arrays.asList("--ignore-certificate-errors"));
-		 caps.setCapability("browserstack.local", "true");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run Safari");
 	      driver.manage().window().maximize();
