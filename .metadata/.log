@@ -14,3 +14,9 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY com.android.ide.eclipse.adt 2 0 2016-01-21 13:53:36.422
 !MESSAGE No projects found for [/Users/pktqa/Desktop/BrandProduction/test/Articles.xml]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-01-21 14:41:53.185
+!MESSAGE No valid Android XML Editor Delegate found for file /test/StagingArticles.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-21 14:42:24.891
+!MESSAGE No projects found for [/Users/pktqa/Desktop/BrandProduction/test/StagingArticles.xml]

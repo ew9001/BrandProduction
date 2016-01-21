@@ -7,7 +7,7 @@
      
       
       <classes>
-         <class name="staging.templates.Articles" />
+         <class name="shop.product.Articles" />
       </classes>
       
    </test>
