@@ -76,7 +76,7 @@ public class QuickView {
 		    System.out.println("You have  " + buttons.size() + " social icon shares on the article page");
 		    socialCount=buttons.size();
 	}
-	public static void testSocial(String component) throws IOException, InterruptedException
+	public static void testSocial(String component) throws IOException
 	  {
 		  boolean otherSocial=true;
 	      
@@ -84,8 +84,8 @@ public class QuickView {
 		  //Get facebook
 					
 		  String timeStamp = new SimpleDateFormat("HHmmss").format(Calendar.getInstance().getTime());
-		  driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
-		  Thread.sleep(1000);
+		  driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
+ 
 		  driver.findElement(By.id(component)).click();
 		  driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 		    name=""+ browser+"/" + "popup" +"_"+ timeStamp + ".png";
