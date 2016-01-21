@@ -220,7 +220,6 @@ public class QuickView {
   
   public static void getPrintArticle() throws IOException
   {
-	  driver.get(System.getProperty("BrandUrl"));
 	  name=""+ System.getProperty("Browser")+"/" + driver.getTitle() +"_"+ counter + "_" + "article_page.png";
       takeScreeshot(name);
       System.out.println("Image Name " +name);
@@ -534,7 +533,7 @@ public class QuickView {
 	  Thread.sleep(1000);
       Thread.sleep(1000);
       Thread.sleep(1000);
-      System.out.println("Login to facebook, pintrest, gmail");
+      
       driver.get("http://facebook.com");
       
 		driver.findElement(By.id("email")).sendKeys("epaesye_shepardman_1453031335@tfbnw.net");

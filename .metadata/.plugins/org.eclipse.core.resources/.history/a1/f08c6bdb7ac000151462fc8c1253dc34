@@ -40,8 +40,6 @@ public class Articles extends QuickView {
 	  
 	
 	  
-	  
-	  setupSocial();
 	  getPrintArticle();
 	  getSocialCount();
 	  for(int i=0;i<socialCount;i++)
