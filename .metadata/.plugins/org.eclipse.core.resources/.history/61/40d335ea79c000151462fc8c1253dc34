@@ -88,7 +88,7 @@ public class QuickView {
 		  Thread.sleep(1000);
 		  driver.findElement(By.id(component)).click();
 		  driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
-		    name=""+ System.getProperty("Browser")+"/" + "popup" +"_"+ timeStamp + ".png";
+		    name=""+ browser+"/" + "popup" +"_"+ timeStamp + ".png";
 		    takeScreeshot(name); 
 		  //*[@id="phdesktopbody_0_phdesktoparticlesharerecommend_1_rptSMLinks_smHyperLink_0"]
 		 
@@ -96,7 +96,7 @@ public class QuickView {
 		   // String facebookURL= driver.findElement(By.xpath("//*[contains(text(), 'Share on')]")).getAttribute("href");
 		    driver.get(facebookURL);
 		    driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		    name=""+ System.getProperty("Browser")+"/" + "inside" +"_"+ timeStamp + ".png";
+		    name=""+ browser+"/" + "inside" +"_"+ timeStamp + ".png";
 		    takeScreeshot(name); 
 		    driver.get(System.getProperty("BrandUrl"));
 		    
@@ -120,7 +120,7 @@ public class QuickView {
 		    driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
 		
 		    driver.findElement(By.xpath("//*[contains(text(), 'mail')]")).click();
-		    name=""+ System.getProperty("Browser")+"/" + "popup" +"_"+ "email" + ".png";
+		    name=""+ browser+"/" + "popup" +"_"+ "email" + ".png";
 		    driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
 		    Thread.sleep(1000);
 		    Thread.sleep(2000);
@@ -130,7 +130,7 @@ public class QuickView {
 		    
 		   // driver.findElement(By.id(" btnsend")).click();
 		  //  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		  //  name=""+ System.getProperty("Browser")+"/" + "popup" +"_"+ "error" + ".png";
+		  //  name=""+ browser+"/" + "popup" +"_"+ "error" + ".png";
 		//    takeScreeshot(name); 
 		    
 		    driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
@@ -141,7 +141,7 @@ public class QuickView {
 		    System.out.println("Let me look when I submit blank form");
 		    jse.executeScript("document.getElementById('btnsend').click();");
 		    
-		    name=""+ System.getProperty("Browser")+"/" + "popup" +"_"+ "errors" + ".png";
+		    name=""+ browser+"/" + "popup" +"_"+ "errors" + ".png";
 		    driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 		    takeScreeshot(name); 
 		    
@@ -156,7 +156,7 @@ public class QuickView {
 		    
 			
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		    name=""+ System.getProperty("Browser")+"/" + "popup" +"_"+ "ready_to_submit" + ".png";
+		    name=""+ browser+"/" + "popup" +"_"+ "ready_to_submit" + ".png";
 		    takeScreeshot(name); 
 		    driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		  //  driver.findElement(By.xpath("//*[contains(text(), 'Send')]")).click();
@@ -167,7 +167,7 @@ public class QuickView {
 			driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 			 Thread.sleep(1000);
 			    Thread.sleep(1000);
-		    name=""+ System.getProperty("Browser")+"/" + "popup" +"_"+ "next_popup" + ".png";
+		    name=""+ browser+"/" + "popup" +"_"+ "next_popup" + ".png";
 		    takeScreeshot(name); 
 		 
 		    driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
@@ -195,7 +195,7 @@ public class QuickView {
 	      driver.findElement(By.id(quickView)).click();
 	      Thread.sleep(5000);
 	      
-	      name=""+ System.getProperty("Browser")+"/" + "loaded" +"_"+ "1st quickview" + ".png";
+	      name=""+ browser+"/" + "loaded" +"_"+ "1st quickview" + ".png";
 	      
 	      takeScreeshot(name); 
   }
@@ -220,7 +220,7 @@ public class QuickView {
   
   public static void getPrintArticle() throws IOException
   {
-	  name=""+ System.getProperty("Browser")+"/" + driver.getTitle() +"_"+ counter + "_" + "article_page.png";
+	  name=""+ browser+"/" + driver.getTitle() +"_"+ counter + "_" + "article_page.png";
       takeScreeshot(name);
       System.out.println("Image Name " +name);
      // driver.findElement(By.xpath("//span[text()='Print']")).click();
@@ -228,7 +228,7 @@ public class QuickView {
 	 driver.findElement(By.id("phdesktopbody_0_phdesktopprint_0_anchrPrint")).click(); 
 	     driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	        driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
-	        name=""+ System.getProperty("Browser")+"/" + driver.getTitle() +"_"+ counter + "_" + "print.png";
+	        name=""+ browser+"/" + driver.getTitle() +"_"+ counter + "_" + "print.png";
 	        takeScreeshot(name);
 	        System.out.println("Image Name " +name);
 	        driver.findElement(By.id("print-modal-mask")).click(); 
@@ -239,7 +239,7 @@ public class QuickView {
   public static void shareEmail(String name1, String name2, String email1, String email2) throws IOException, InterruptedException
   {
 	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	  Thread.sleep(1000);
+
 	  try{
 		  WebElement email = driver.findElement(By.xpath("//td[contains(text(),'mail')]")) ;
 		  email.click();
@@ -255,7 +255,7 @@ public class QuickView {
 	  
 	  Thread.sleep(15000);
 
-	   name=""+ System.getProperty("Browser")+"/" + driver.getTitle() +"_"+ counter + "_" + "email_popup.png";
+	   name=""+ browser+"/" + driver.getTitle() +"_"+ counter + "_" + "email_popup.png";
        takeScreeshot(name);
        System.out.println("Image Name " +name);
        
@@ -263,7 +263,7 @@ public class QuickView {
        driver.findElement(By.id("btnsend")).click();
 	   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	   
-	   name=""+ System.getProperty("Browser")+"/" + driver.getTitle() +"_"+ counter + "_" + "email_errors.png";
+	   name=""+ browser+"/" + driver.getTitle() +"_"+ counter + "_" + "email_errors.png";
        takeScreeshot(name);
        System.out.println("Image Name " +name);
        
@@ -275,7 +275,7 @@ public class QuickView {
 	driver.findElement(By.id("phdesktopbody_0_phdesktoparticlesharerecommend_2_txtFriendEmail")).sendKeys(email2);
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  
-	  name=""+ System.getProperty("Browser")+"/" + driver.getTitle() +"_"+ counter + "_" + "ready_2_submit.png";
+	  name=""+ browser+"/" + driver.getTitle() +"_"+ counter + "_" + "ready_2_submit.png";
       takeScreeshot(name);
       System.out.println("Image Name " +name);
       
@@ -285,13 +285,13 @@ public class QuickView {
        
 	 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  
-	  name=""+ System.getProperty("Browser")+"/" + driver.getTitle() +"_"+ counter + "_" + "ready_2_submit.png";
+	  name=""+ browser+"/" + driver.getTitle() +"_"+ counter + "_" + "ready_2_submit.png";
      takeScreeshot(name);
      System.out.println("Image Name " +name);
      
      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-	name=""+ System.getProperty("Browser")+"/" + driver.getTitle() +"_"+ counter + "_" + "continue.png";
+	name=""+ browser+"/" + driver.getTitle() +"_"+ counter + "_" + "continue.png";
     takeScreeshot(name);
     System.out.println("Image Name " +name);
     driver.findElement(By.id("phdesktopbody_0_phdesktoparticlesharerecommend_2_anchrEmailContinue")).click();
@@ -309,7 +309,7 @@ public class QuickView {
 		  driver.findElement(By.id("phdesktopbody_0_phdesktopproductprimarycontentarea_0_anchrBuyNowLeft")).click();
 		  Thread.sleep(15000);
 		}
-	  name=""+ System.getProperty("Browser")+"/" + counter +"_"+ "buy_now" + ".png";
+	  name=""+ browser+"/" + counter +"_"+ "buy_now" + ".png";
 	  Thread.sleep(1000);
 	  takeScreeshot(name);
 	
@@ -362,7 +362,7 @@ public class QuickView {
 				 
 				  
 				  
-				  name=""+ System.getProperty("Browser")+"/" +quickProduct + "_" + value +"_"+ value2 + ".png";
+				  name=""+ browser+"/" +quickProduct + "_" + value +"_"+ value2 + ".png";
 				  Thread.sleep(1000);
 				  takeScreeshot(name);
 				  variant+=1;
@@ -383,7 +383,7 @@ public class QuickView {
 		  else
 			  
 		  {
-			  name=""+ System.getProperty("Browser")+"/" + quickProduct + "_" + value +"_"+ ".png";
+			  name=""+ browser+"/" + quickProduct + "_" + value +"_"+ ".png";
 			  
 			  
 			  Thread.sleep(1000);
@@ -434,7 +434,7 @@ public class QuickView {
 			  new Select(driver.findElement(By.id("ProductVariants2_ddlVariantionSelector"))).selectByIndex(j-1);
 			  
 			  
-			  name=""+ System.getProperty("Browser")+"/" + value +"_"+ value2 + ".png";
+			  name=""+ browser+"/" + value +"_"+ value2 + ".png";
 			  
 			  
 			 
@@ -509,7 +509,7 @@ public class QuickView {
 
 
 	  
-	  String name=""+ System.getProperty("Browser")+"/" + browser +"_"+ counter + "_" + "Successful-Completed-Capture.png";
+	  String name=""+ browser+"/" + browser +"_"+ counter + "_" + "Successful-Completed-Capture.png";
 	 
 		  System.out.println("Let me see which one get tested " +System.getProperty("Browser"));
 		  

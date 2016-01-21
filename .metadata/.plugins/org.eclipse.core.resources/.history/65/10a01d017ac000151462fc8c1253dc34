@@ -239,7 +239,7 @@ public class QuickView {
   public static void shareEmail(String name1, String name2, String email1, String email2) throws IOException, InterruptedException
   {
 	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	  Thread.sleep(1000);
+
 	  try{
 		  WebElement email = driver.findElement(By.xpath("//td[contains(text(),'mail')]")) ;
 		  email.click();
