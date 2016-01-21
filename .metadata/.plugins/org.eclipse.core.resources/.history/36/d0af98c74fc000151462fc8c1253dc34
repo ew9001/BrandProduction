@@ -220,8 +220,7 @@ public class QuickView {
 	  name=""+ browser+"/" + driver.getTitle() +"_"+ counter + "_" + "article_page.png";
       takeScreeshot(name);
       System.out.println("Image Name " +name);
-      driver.findElement(By.xpath("//span[text()='Print']")).click();
-	 //driver.findElement(By.id("phdesktopbody_0_phdesktopprint_0_anchrPrint")).click(); 
+	  driver.findElement(By.id("phdesktopbody_0_phdesktopprint_0_anchrPrint")).click(); 
 	     driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	        driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
 	        name=""+ browser+"/" + driver.getTitle() +"_"+ counter + "_" + "print.png";
@@ -525,7 +524,8 @@ public class QuickView {
 				  Thread.sleep(1000);
 				  Thread.sleep(1000);
 				  Thread.sleep(1000);
-				
+				name=""+ browser+"/" + driver.getTitle() +"_"+ counter + "_" + "pintrest.png";
+			    takeScreeshot(name);
 	            driver.get(System.getProperty("BrandUrl"));
   }
 
