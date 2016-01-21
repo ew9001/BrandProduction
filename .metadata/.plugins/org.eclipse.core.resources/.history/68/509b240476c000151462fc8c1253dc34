@@ -456,7 +456,7 @@ public class QuickView {
   }
 
   
- @BeforeClass
+  @BeforeMethod
 
   public void beforeClass() throws InterruptedException, IOException {
 	  if (System.getProperty("Browser").equals("safari")) {
@@ -511,9 +511,8 @@ public class QuickView {
 	  
 	  String name=""+ browser+"/" + browser +"_"+ counter + "_" + "Successful-Completed-Capture.png";
 	 
-		  System.out.println("Let me see which one get tested " +System.getProperty("Browser"));
-		  
-		  
+		  System.out.println("Let me see which one get tested " +browser);
+		  System.out.println("Image Name " +name);
 
 		  
 	 
