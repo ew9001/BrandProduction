@@ -66,7 +66,7 @@ public class QuickView {
 	    return true;
 	}
 	
-	public static void getSocialCount() throws IOException, InterruptedException
+	public static void getSocialCount() throws IOException
 	{
 		 driver.get(System.getProperty("BrandUrl"));
 		 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
@@ -77,12 +77,6 @@ public class QuickView {
 		  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		 //phdesktopbody_0_phdesktopsharemail_0_rptSMLinks_smHyperLink_0
 		    System.out.println("You have  " + buttons.size() + " social icon shares on the article page");
-		    
-		    WebElement element = driver.findElement(By.cssSelector("i.fa.fa-facebook"));
-		    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-		    Thread.sleep(500); 
-		    name=""+ System.getProperty("Browser")+"/" + "popup" +"_"+ counter + ".png";
-		    takeScreeshot(name); 
 		    socialCount=buttons.size();
 	}
 	public static void testSocial(String component) throws IOException, InterruptedException

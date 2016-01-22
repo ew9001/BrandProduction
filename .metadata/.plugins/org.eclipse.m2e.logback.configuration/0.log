@@ -248,3 +248,7 @@
 2016-01-22 12:40:07,260 [Worker-807] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/test/resources
 2016-01-22 12:41:30,675 [Worker-808] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pktqa/Desktop/BrandProduction/test
 2016-01-22 12:41:30,676 [Worker-808] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -DBrowser=browserIE10 -DBrowserUrl=http://www.daregreatly.com/explore/technology/wearables/sabine-seymour -DsuiteFile=CadilacDareGreatly.xml  -B test
+2016-01-22 12:49:51,535 [Worker-808] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-22 12:49:51,535 [Worker-808] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/main/resources
+2016-01-22 12:49:51,537 [Worker-808] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-22 12:49:51,537 [Worker-808] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/test/resources
