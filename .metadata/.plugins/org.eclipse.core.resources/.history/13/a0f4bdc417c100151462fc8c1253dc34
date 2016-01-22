@@ -112,7 +112,8 @@ public class QuickView {
 	  {
 		
 		  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-	
+		  WebElement email = driver.findElement(By.cssSelector("a[href*='#share-overlay']"));
+		  String alt = email.getCssValue("alt");
 		  
 		//*[@id="phdesktopbody_0_phdesktoparticlesharerecommend_2_anchrShareEmail"]
 		

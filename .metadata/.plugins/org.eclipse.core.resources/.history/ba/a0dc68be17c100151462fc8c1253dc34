@@ -100,7 +100,7 @@ public class QuickView {
 		    takeScreeshot(name); 
 		    driver.findElement(By.xpath("html//body/div[4]")).click();
 		   //driver.get(System.getProperty("BrandUrl"));
-			  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		    
 		    
 		    //Get Twitter
 		    
@@ -112,7 +112,8 @@ public class QuickView {
 	  {
 		
 		  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-	
+		  WebElement email = driver.findElement(By.cssSelector("a[href*='#share-overlay']"));
+		  String alt = email.getCssValue("alt");
 		  
 		//*[@id="phdesktopbody_0_phdesktoparticlesharerecommend_2_anchrShareEmail"]
 		
