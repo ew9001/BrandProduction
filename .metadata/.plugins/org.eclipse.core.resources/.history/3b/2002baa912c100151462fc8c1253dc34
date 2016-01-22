@@ -117,7 +117,8 @@ public class QuickView {
 		//*[@id="phdesktopbody_0_phdesktoparticlesharerecommend_2_anchrShareEmail"]
 		
 		    driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
-		    driver.findElement(By.cssSelector("input[id$='phdesktopbody_0_phdesktopprint_0_anchrPrint']")).click();
+		    JavascriptExecutor jse = (JavascriptExecutor)driver;
+		    jse.executeScript("document.getElementById('phdesktopbody_0_phdesktoparticlesharerecommend_2_anchrShareEmail')");
 			driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 			 Thread.sleep(1000);
 			 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
