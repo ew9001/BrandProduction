@@ -116,9 +116,9 @@ public class QuickView {
 		  
 		//*[@id="phdesktopbody_0_phdesktoparticlesharerecommend_2_anchrShareEmail"]
 		
-		    driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
 		    System.out.println("Let me click on Email popup");
-		    driver.findElement(By.xpath("img[@alt='Share']")).click();
+		    driver.findElement(By.cssSelector("input[id$='anchrShareEmail']")).click();
 			driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 			 Thread.sleep(1000);
 			 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
