@@ -142,7 +142,6 @@ public class QuickView {
 		    
 		    
 		    System.out.println("Let me look when I submit blank form");
-		    JavascriptExecutor jse = (JavascriptExecutor)driver;
 		    jse.executeScript("document.getElementById('btnsend').click();");
 		    
 		    name=""+ System.getProperty("Browser")+"/" + "popup" +"_"+ "errors" + ".png";
