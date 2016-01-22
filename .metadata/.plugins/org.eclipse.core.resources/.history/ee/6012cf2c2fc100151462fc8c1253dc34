@@ -68,8 +68,7 @@ public class QuickView {
 	
 	public static void getSocialCount() throws IOException
 	{
-		 driver.get(System.getProperty("BrandUrl"));
-		 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		 
 		 List<WebElement> buttons = driver.findElements(By.xpath("//*[contains(@class, 'fa fa')]"));
 		//*[@id="phdesktopbody_0_phdesktoparticlesharerecommend_1_rptSMLinks_smHyperLink_0"]
 		  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);

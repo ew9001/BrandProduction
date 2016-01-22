@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Social Media]">
   <test name="Facebook Twitter Google plus(failed)">
     <classes>
-      <class name="project.facebook.CadilacDareGreatly">
+      <class name="cadilac.dare.Articles">
         <methods>
-          <include name="testSocial"/>
           <include name="beforeClass"/>
+          <include name="brandArticle"/>
         </methods>
-      </class> <!-- project.facebook.CadilacDareGreatly -->
+      </class> <!-- cadilac.dare.Articles -->
     </classes>
   </test> <!-- Facebook Twitter Google plus(failed) -->
 </suite> <!-- Failed suite [Social Media] -->
