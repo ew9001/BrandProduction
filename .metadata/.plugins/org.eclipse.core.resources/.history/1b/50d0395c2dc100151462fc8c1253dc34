@@ -7,7 +7,7 @@
      
       
       <classes>
-         <class name="cadilac.dare.Articles" />
+         <class name="project.facebook.CadilacDareGreatly" />
       </classes>
       
    </test>
