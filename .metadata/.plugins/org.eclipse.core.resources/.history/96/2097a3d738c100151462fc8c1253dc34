@@ -79,7 +79,6 @@ public class QuickView {
 		  Point p = element1.getLocation();
 		  ((JavascriptExecutor) driver).executeScript("window.scroll(" + p.getX() + "," + (p.getY() + 200) + ");");
 		  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		  element1.click();
 		 //phdesktopbody_0_phdesktopsharemail_0_rptSMLinks_smHyperLink_0
 		    System.out.println("You have  " + buttons.size() + " social icon shares on the article page");
 		    

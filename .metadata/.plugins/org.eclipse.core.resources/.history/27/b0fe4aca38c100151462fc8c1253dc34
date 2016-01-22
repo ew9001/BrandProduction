@@ -24,7 +24,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.Point;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -74,12 +73,8 @@ public class QuickView {
 		 List<WebElement> buttons = driver.findElements(By.xpath("//*[contains(@class, 'fa fa')]"));
 		//*[@id="phdesktopbody_0_phdesktoparticlesharerecommend_1_rptSMLinks_smHyperLink_0"]
 		  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		// driver.findElement(By.cssSelector("i.fa.fa-facebook")).click();
-		  WebElement element1 = driver.findElement(By.id("shareFacebook"));
-		  Point p = element1.getLocation();
-		  ((JavascriptExecutor) driver).executeScript("window.scroll(" + p.getX() + "," + (p.getY() + 200) + ");");
+		 driver.findElement(By.cssSelector("i.fa.fa-facebook")).click();
 		  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		  element1.click();
 		 //phdesktopbody_0_phdesktopsharemail_0_rptSMLinks_smHyperLink_0
 		    System.out.println("You have  " + buttons.size() + " social icon shares on the article page");
 		    
