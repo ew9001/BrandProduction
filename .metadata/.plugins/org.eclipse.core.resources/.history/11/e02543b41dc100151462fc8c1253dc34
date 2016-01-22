@@ -118,15 +118,12 @@ public class QuickView {
 		
 		    driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		    System.out.println("Let me click on Email popup");
-		    Thread.sleep(1000);
 		    WebElement email = driver.findElement(By.cssSelector("a[href*='#share-overlay']"));
 			  String alt = email.getCssValue("alt");
 			  
 			//*[@id="phdesktopbody_0_phdesktoparticlesharerecommend_2_anchrShareEmail"]
-			  softAssert.assertEquals("email",alt); 
-			  Thread.sleep(1000);
+			  softAssert.assertEquals("email",alt);  
 			  email.click();
-			  Thread.sleep(1000);
 			    driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 			 Thread.sleep(1000);
