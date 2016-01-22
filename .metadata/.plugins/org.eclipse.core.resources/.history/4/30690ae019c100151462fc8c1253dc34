@@ -98,9 +98,9 @@ public class QuickView {
 		    driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		    name=""+ System.getProperty("Browser")+"/" + "inside" +"_"+ timeStamp + ".png";
 		    takeScreeshot(name); 
-		  
-		   driver.get(System.getProperty("BrandUrl"));
-			  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		    driver.findElement(By.xpath("html//body/div[4]")).click();
+		   //driver.get(System.getProperty("BrandUrl"));
+			  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		    
 		    //Get Twitter
 		    
