@@ -555,8 +555,7 @@ public class QuickView {
 		driver.findElement(By.id("pass")).sendKeys("p@blicis1");
 		driver.findElement(By.id("loginbutton")).click();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		 Thread.sleep(1000);
-		  Thread.sleep(1000);
+		
 		
 	      driver.get("http://gmail.com");
 	      Thread.sleep(1000);
@@ -625,7 +624,7 @@ public class QuickView {
   public WebDriver browserIE11() throws MalformedURLException  
 	 {  
 	  
-		 System.out.println("Let me run browserIE11");
+		 System.out.println("Let me run mobileGalaxyS3");
 		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
 		 DesiredCapabilities caps = new DesiredCapabilities();
 		 caps.setCapability("browser", "IE");
@@ -804,7 +803,7 @@ public class QuickView {
 	 public WebDriver browserFirefox() throws MalformedURLException  
 	 {  
 	  
-		 System.out.println("Let me run Firefox 42 on Maverick");
+		 System.out.println("Let me run mobileGalaxyS3");
 		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
 		 DesiredCapabilities caps = new DesiredCapabilities();
 		 caps.setCapability("browser", "Firefox");
