@@ -69,11 +69,9 @@ public class QuickView {
 	public static void getSocialCount() throws IOException
 	{
 		 
-		 List<WebElement> buttons = driver.findElements(By.xpath("//*[contains(@class, 'fa fa')]"));
+		 List<WebElement> buttons = driver.findElements(By.xpath("//*[contains(@id, 'share')]"));
 		//*[@id="phdesktopbody_0_phdesktoparticlesharerecommend_1_rptSMLinks_smHyperLink_0"]
-		  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		 driver.findElement(By.cssSelector("i.fa.fa-facebook")).click();
-		  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		 
 		 //phdesktopbody_0_phdesktopsharemail_0_rptSMLinks_smHyperLink_0
 		    System.out.println("You have  " + buttons.size() + " social icon shares on the article page");
 		    socialCount=buttons.size();
@@ -571,7 +569,7 @@ public class QuickView {
 			driver.findElement(By.id("signIn")).click();
 			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			
-			/*
+			
 			driver.get("https://www.pinterest.com/login/?referrer=home_page");
 			 Thread.sleep(1000);
 			  Thread.sleep(1000);
@@ -598,7 +596,6 @@ public class QuickView {
 			  Thread.sleep(1000);
 			  Thread.sleep(1000);
 			  Thread.sleep(1000);
-			  */
 	  
   }
   

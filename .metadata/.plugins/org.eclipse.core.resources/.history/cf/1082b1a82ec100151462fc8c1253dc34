@@ -571,7 +571,7 @@ public class QuickView {
 			driver.findElement(By.id("signIn")).click();
 			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			
-			/*
+			
 			driver.get("https://www.pinterest.com/login/?referrer=home_page");
 			 Thread.sleep(1000);
 			  Thread.sleep(1000);
@@ -598,7 +598,6 @@ public class QuickView {
 			  Thread.sleep(1000);
 			  Thread.sleep(1000);
 			  Thread.sleep(1000);
-			  */
 	  
   }
   
