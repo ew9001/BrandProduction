@@ -123,7 +123,7 @@ public class QuickView {
 		  Thread.sleep(1000);
 		  driver.findElement(By.id(component)).click();
 		  driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
-		    name=""+ System.getProperty("Browser")+"/" + "popup" +"_"+ counter + ".png";
+		    name=""+ System.getProperty("Browser")+"/" + "popup" +"_"+ timeStamp + ".png";
 		    takeScreeshot(name); 
 		  //*[@id="phdesktopbody_0_phdesktoparticlesharerecommend_1_rptSMLinks_smHyperLink_0"]
 		 
@@ -131,7 +131,7 @@ public class QuickView {
 		   // String facebookURL= driver.findElement(By.xpath("//*[contains(text(), 'Share on')]")).getAttribute("href");
 		    driver.get(facebookURL);
 		    driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		    name=""+ System.getProperty("Browser")+"/" + "inside" +"_"+ counter + ".png";
+		    name=""+ System.getProperty("Browser")+"/" + "inside" +"_"+ timeStamp + ".png";
 		    driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		    takeScreeshot(name); 
 		  
