@@ -35,7 +35,7 @@ package staging.templates;
 				
 				  new Select(driver.findElement(By.id("phdesktopbody_0_phdesktopproductresults_0_ddlSortBy"))).selectByVisibleText(value);
 				  counter+=1;
-				  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+				  Thread.sleep(5000);
 				  name=""+ System.getProperty("Browser")+"/" + "sort" +"_"+ counter + ".png";
 				  counter+=1;
 				    takeScreeshot(name); 
