@@ -49,7 +49,7 @@ public class AllProducts extends QuickView {
   public void variantName()  throws InterruptedException, IOException {
 	  
 	// getQuick("phdesktopbody_0_phdesktopproductresults_1_RptrProductList_liProduct_2","phdesktopbody_0_phdesktopproductresults_1_RptrProductList_lblQuickView_2");
-	  setupSocial();
+	
 	  getSocialCount();
 	  for(int i=0;i<socialCount;i++)
 	  {
