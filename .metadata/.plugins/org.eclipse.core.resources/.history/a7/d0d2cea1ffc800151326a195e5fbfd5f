@@ -7,7 +7,7 @@
      
       
       <classes>
-         <class name="staging.templates.Articles" />
+         <class name="staging.template.Articles" />
       </classes>
       
    </test>
