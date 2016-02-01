@@ -137,7 +137,7 @@ public class QuickView {
 		  
 		   driver.get(System.getProperty("BrandUrl"));
 			  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		    counter +=1;
+		    
 		    //Get Twitter
 		    
 		    
