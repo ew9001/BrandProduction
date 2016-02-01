@@ -5,6 +5,7 @@ import org.testng.asserts.SoftAssert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
+import java.awt.Toolkit;
 import java.io.Console;
 import java.io.File;
 import java.io.IOException;
@@ -35,7 +36,9 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -71,21 +74,41 @@ public class QuickView {
 	{
 		 driver.get(System.getProperty("BrandUrl"));
 		 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		 List<WebElement> buttons = driver.findElements(By.xpath("//*[contains(@class, 'fa fa')]"));
+		 List<WebElement> buttons = driver.findElements(By.xpath("//*[contains(@class, 'fa fa-facebook')]"));
 		//*[@id="phdesktopbody_0_phdesktoparticlesharerecommend_1_rptSMLinks_smHyperLink_0"]
 		  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		// driver.findElement(By.cssSelector("i.fa.fa-facebook")).click();
-		  WebElement element1 = driver.findElement(By.id("shareFacebook"));
-		  Point p = element1.getLocation();
-		  ((JavascriptExecutor) driver).executeScript("window.scroll(" + p.getX() + "," + (p.getY() + 200) + ");");
-		  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		  element1.click();
+		 
+		  
+		  //move to element
+		  
+		  new Actions(driver)
+     	 .moveToElement(driver.findElement(By.xpath(".//a/i[@class='fa fa-facebook']")))
+     	 .perform();
+		  
+		  // resize the screen
+		  
+		  Toolkit toolkit = Toolkit.getDefaultToolkit();
+	         int Width = (int) toolkit.getScreenSize().getWidth();
+	         int Height = (int) toolkit.getScreenSize().getHeight();
+	         Dimension screenResolution = new Dimension(Width+400, Height+400);
+	         driver.manage().window().setSize(screenResolution);
+	         
+		 
 		 //phdesktopbody_0_phdesktopsharemail_0_rptSMLinks_smHyperLink_0
 		    System.out.println("You have  " + buttons.size() + " social icon shares on the article page");
-		    
-		    WebElement element = driver.findElement(By.cssSelector("i.fa.fa-facebook"));
-		    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-		    Thread.sleep(500); 
+		   
+	
+		    driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
+		    new Actions(driver)
+	     	
+	     	 .doubleClick(driver.findElement(By.xpath(".//a/i[@class='fa fa-facebook']")))
+	     	 .perform();
+		    Thread.sleep(50000);
+	         QuickView.takeScreeshot("wa434435.png");
+	         Wait<WebDriver> wait1 = new WebDriverWait(driver, 20);
+	         // Wait for search to complete
+	         wait1.until(ExpectedConditions.titleContains("Facebook"));
 		    name=""+ System.getProperty("Browser")+"/" + "popup" +"_"+ counter + ".png";
 		    takeScreeshot(name); 
 		    socialCount=buttons.size();

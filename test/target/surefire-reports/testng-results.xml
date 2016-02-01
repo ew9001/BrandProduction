@@ -1,65 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Social Media" duration-ms="22041" started-at="2016-01-22T17:41:42Z" finished-at="2016-01-22T17:42:04Z">
+  <suite name="Product" duration-ms="181611" started-at="2016-01-29T21:58:22Z" finished-at="2016-01-29T22:01:24Z">
     <groups>
     </groups>
-    <test name="Facebook Twitter Google plus" duration-ms="22041" started-at="2016-01-22T17:41:42Z" finished-at="2016-01-22T17:42:04Z">
-      <class name="cadilac.dare.Articles">
-        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:cadilac.dare.Articles@71060c3e]" name="beforeClass" is-config="true" duration-ms="0" started-at="2016-01-22T12:41:42Z" finished-at="2016-01-22T12:41:42Z">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[null value in entry: url=null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
-	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
-	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:39)
-	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:57)
-	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:80)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:311)
-	at cadilac.dare.QuickView.beforeClass(QuickView.java:542)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+    <test name="Product Details" duration-ms="181611" started-at="2016-01-29T21:58:22Z" finished-at="2016-01-29T22:01:24Z">
+      <class name="staging.templates.AllProducts">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:staging.templates.AllProducts@5295c398]" name="beforeClass" is-config="true" duration-ms="26574" started-at="2016-01-29T16:58:22Z" finished-at="2016-01-29T16:58:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="brandArticle()[pri:0, instance:cadilac.dare.Articles@71060c3e]" name="brandArticle" duration-ms="0" started-at="2016-01-22T12:42:04Z" finished-at="2016-01-22T12:42:04Z">
+        <test-method status="PASS" signature="variantName()[pri:0, instance:staging.templates.AllProducts@5295c398]" name="variantName" duration-ms="155023" started-at="2016-01-29T16:58:49Z" finished-at="2016-01-29T17:01:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- brandArticle -->
-      </class> <!-- cadilac.dare.Articles -->
-    </test> <!-- Facebook Twitter Google plus -->
-  </suite> <!-- Social Media -->
+        </test-method> <!-- variantName -->
+      </class> <!-- staging.templates.AllProducts -->
+    </test> <!-- Product Details -->
+  </suite> <!-- Product -->
 </testng-results>

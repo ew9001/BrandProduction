@@ -26,3 +26,31 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY com.android.ide.eclipse.adt 2 0 2016-01-22 12:27:07.018
 !MESSAGE No projects found for [/Users/pktqa/Desktop/BrandProduction/test/CadilacDareGreatly.xml]
+!SESSION 2016-01-25 11:00:19.167 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -keyring /Users/pktqa/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data /Users/pktqa/Desktop/BrandProduction -product org.eclipse.epp.package.jee.product -keyring /Users/pktqa/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2016-01-25 11:00:28.805
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-01-28 12:48:02.681
+!MESSAGE No valid Android XML Editor Delegate found for file /test/ProductDetails.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-01-28 12:48:18.655
+!MESSAGE No valid Android XML Editor Delegate found for file /test/ProductLanding.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-28 12:48:59.609
+!MESSAGE No projects found for [/Users/pktqa/Desktop/BrandProduction/test/ProductDetails.xml]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-28 12:49:32.827
+!MESSAGE No projects found for [/Users/pktqa/Desktop/BrandProduction/test/ProductLanding.xml]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-02-01 09:21:11.433
+!MESSAGE No valid Android XML Editor Delegate found for file /test/Search.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-02-01 09:21:48.461
+!MESSAGE No projects found for [/Users/pktqa/Desktop/BrandProduction/test/Search.xml]

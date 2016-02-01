@@ -466,6 +466,7 @@ public class QuickView {
 		 caps.setCapability("os_version", "7");
 		 caps.setCapability("resolution", "1024x768");
 		 caps.setCapability("browserstack.debug", "true");
+		 
 		 caps.setCapability("browserstack.selenium_version", "2.48.2");
 		 //caps.setCapability("browserstack.selenium_version", "2.47.1");
 		 caps.setCapability("acceptSslCerts", "true");

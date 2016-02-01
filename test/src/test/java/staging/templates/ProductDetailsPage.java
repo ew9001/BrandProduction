@@ -36,11 +36,11 @@ public class ProductDetailsPage extends QuickView {
 	 
 	  
   @Test
-  public  static void variantName()  throws InterruptedException, IOException {
+  public void variantName()  throws InterruptedException, IOException {
 	  
 	
 	 
-      variantName("phdesktopbody_0_phdesktopproductprimarycontentarea_0_ProductVariantsLeft1_ddlVariantionSelectorLeft","ProductVariants2_ddlVariantionSelector");
+	  getDropDown();
       
       
  

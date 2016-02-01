@@ -46,26 +46,11 @@ public class AllProducts extends QuickView {
 	 
 	  
   @Test
-  public  static void variantName()  throws InterruptedException, IOException {
+  public void variantName()  throws InterruptedException, IOException {
 	  
-	 getQuick("phdesktopbody_0_phdesktopproductresults_1_RptrProductList_liProduct_2","phdesktopbody_0_phdesktopproductresults_1_RptrProductList_lblQuickView_2");
+	// getQuick("phdesktopbody_0_phdesktopproductresults_1_RptrProductList_liProduct_2","phdesktopbody_0_phdesktopproductresults_1_RptrProductList_lblQuickView_2");
 	
-      variantName("UCQuickView_ProductVariants1_ddlVariantionSelector","ProductVariants2_ddlVariantionSelector");
-      
-      
-      getQuick("phdesktopbody_0_phdesktopproductresults_1_RptrProductList_liProduct_3","phdesktopbody_0_phdesktopproductresults_1_RptrProductList_lblQuickView_3");
-  	
-      variantName("UCQuickView_ProductVariants1_ddlVariantionSelector","ProductVariants2_ddlVariantionSelector");
-      
-      
-      getQuick("phdesktopbody_0_phdesktopproductresults_1_RptrProductList_liProduct_4","phdesktopbody_0_phdesktopproductresults_1_RptrProductList_lblQuickView_4");
-  	
-      variantName("UCQuickView_ProductVariants1_ddlVariantionSelector","ProductVariants2_ddlVariantionSelector");
-      
-      
-      getQuick("phdesktopbody_0_phdesktopproductresults_1_RptrProductList_liProduct_5","phdesktopbody_0_phdesktopproductresults_1_RptrProductList_lblQuickView_5");
-  	
-      variantName("UCQuickView_ProductVariants1_ddlVariantionSelector","ProductVariants2_ddlVariantionSelector");
+	  getDropDown();
   }
   
 
