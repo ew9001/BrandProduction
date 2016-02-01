@@ -70,7 +70,7 @@ public class QuickView {
 	
 	public static void getDropDown() throws IOException, InterruptedException
 	{
-		List<WebElement> buttons = driver.findElements(By.xpath("//*[contains(@name, 'phdesktopbody_0$phdesktopproductprimarycontentarea_0$ProductVariantsLeft')]"));
+		List<WebElement> buttons = driver.findElements(By.xpath("//*[contains(@name, 'Left2$ddlVariantionSelectorLeft')]"));
 		//*[@id="phdesktopbody_0_phdesktoparticlesharerecommend_1_rptSMLinks_smHyperLink_0"]
 		 
 		 //phdesktopbody_0_phdesktopsharemail_0_rptSMLinks_smHyperLink_0
@@ -90,7 +90,7 @@ public class QuickView {
 		    if (buttons.size()==1)
 		    {
 		    	
-		    	variantName1("phdesktopbody_0_phdesktopproductprimarycontentarea_0_ProductVariantsLeft1_ddlVariantionSelectorLeft");
+		    	variantName1("phdesktopbody_0_phdesktopproductprimarycontentarea_0_ProductVariantsLeft2_ddlVariantionSelectorLeft");
 		    	
 		    }
 		    
@@ -388,7 +388,7 @@ public static void variantName1(String productPackSize) throws InterruptedExcept
 		  new Select(driver.findElement(By.id(productPackSize))).selectByVisibleText(value);
 		  counter+=1;
 		  Thread.sleep(5000);
-		  name=""+ System.getProperty("Browser")+"/" + "product" +"_"+ timeStamp + ".png";
+		  name=""+ System.getProperty("Browser")+"/" + "product" +"_"+ counter + ".png";
 		    takeScreeshot(name);
 		  boolean anotherName=true;
 		  

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Product" duration-ms="181611" started-at="2016-01-29T21:58:22Z" finished-at="2016-01-29T22:01:24Z">
+  <suite name="Product" duration-ms="124509" started-at="2016-02-01T20:15:57Z" finished-at="2016-02-01T20:18:02Z">
     <groups>
     </groups>
-    <test name="Product Details" duration-ms="181611" started-at="2016-01-29T21:58:22Z" finished-at="2016-01-29T22:01:24Z">
+    <test name="Product Details" duration-ms="124509" started-at="2016-02-01T20:15:57Z" finished-at="2016-02-01T20:18:02Z">
       <class name="staging.templates.AllProducts">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:staging.templates.AllProducts@5295c398]" name="beforeClass" is-config="true" duration-ms="26574" started-at="2016-01-29T16:58:22Z" finished-at="2016-01-29T16:58:49Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:staging.templates.AllProducts@665c5a83]" name="beforeClass" is-config="true" duration-ms="35795" started-at="2016-02-01T15:15:57Z" finished-at="2016-02-01T15:16:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="variantName()[pri:0, instance:staging.templates.AllProducts@5295c398]" name="variantName" duration-ms="155023" started-at="2016-01-29T16:58:49Z" finished-at="2016-01-29T17:01:24Z">
+        <test-method status="PASS" signature="variantName()[pri:0, instance:staging.templates.AllProducts@665c5a83]" name="variantName" duration-ms="88702" started-at="2016-02-01T15:16:33Z" finished-at="2016-02-01T15:18:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- variantName -->

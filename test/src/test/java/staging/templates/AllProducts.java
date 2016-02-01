@@ -50,7 +50,15 @@ public class AllProducts extends QuickView {
 	  
 	// getQuick("phdesktopbody_0_phdesktopproductresults_1_RptrProductList_liProduct_2","phdesktopbody_0_phdesktopproductresults_1_RptrProductList_lblQuickView_2");
 	
+	  getSocialCount();
+	  for(int i=0;i<socialCount;i++)
+	  {
+	  testSocial("phdesktopbody_0_phdesktopbreadcrumbtrail_1_rptSMLinks_smHyperLink_"+i);
+	  }
 	  getDropDown();
+	  
+	  
+	 
   }
   
 

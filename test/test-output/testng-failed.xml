@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="shop.product.NewTest">
+      <class name="staging.templates.AllProducts">
         <methods>
           <include name="variantName"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- shop.product.NewTest -->
+      </class> <!-- staging.templates.AllProducts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

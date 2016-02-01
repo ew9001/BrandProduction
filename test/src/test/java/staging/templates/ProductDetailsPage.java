@@ -40,6 +40,11 @@ public class ProductDetailsPage extends QuickView {
 	  
 	
 	 
+	  getSocialCount();
+	  for(int i=0;i<socialCount;i++)
+	  {
+	  testSocial("phdesktopbody_0_phdesktoparticlesharerecommend_1_rptSMLinks_smHyperLink_"+i);
+	  }
 	  getDropDown();
       
       
