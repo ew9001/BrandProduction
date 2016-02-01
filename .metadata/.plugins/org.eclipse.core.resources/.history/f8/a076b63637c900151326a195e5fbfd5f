@@ -370,12 +370,6 @@ public static void variantName1(String productPackSize) throws InterruptedExcept
 		  Thread.sleep(5000);
 		}
 	  
-	  else
-	  {
-		  driver.get(System.getProperty("BrandUrl"));
-		  
-	  }
-	  
 	  
 	//*[@id="phdesktopbody_0_phdesktopproductprimarycontentarea_0_imgBinModelClose"]
 	  
