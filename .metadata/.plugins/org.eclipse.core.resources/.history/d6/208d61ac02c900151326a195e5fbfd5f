@@ -132,7 +132,6 @@ public class QuickView {
 		    driver.get(facebookURL);
 		    driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		    name=""+ System.getProperty("Browser")+"/" + "inside" +"_"+ timeStamp + ".png";
-		    driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		    takeScreeshot(name); 
 		  
 		   driver.get(System.getProperty("BrandUrl"));
