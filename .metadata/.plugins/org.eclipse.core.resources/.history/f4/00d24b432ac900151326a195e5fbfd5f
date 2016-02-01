@@ -684,9 +684,7 @@ public static void variantName1(String productPackSize) throws InterruptedExcept
 			driver.manage().timeouts().implicitlyWait(85, TimeUnit.SECONDS);
 			  Thread.sleep(1000);
 			  driver.get(System.getProperty("BrandUrl"));
-			  Thread.sleep(1000);
-			  Thread.sleep(1000);
-			  Thread.sleep(1000);
+	  
   }
   
   public static WebDriver takeScreeshot(String name) throws IOException
