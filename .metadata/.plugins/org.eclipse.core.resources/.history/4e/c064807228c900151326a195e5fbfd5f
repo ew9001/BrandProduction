@@ -683,7 +683,8 @@ public static void variantName1(String productPackSize) throws InterruptedExcept
 			 driver.findElement(By.xpath("//span[text()='Log in']")).click();
 			driver.manage().timeouts().implicitlyWait(85, TimeUnit.SECONDS);
 			  Thread.sleep(1000);
-			  driver.get(System.getProperty("BrandUrl"));
+			  Thread.sleep(1000);
+			  Thread.sleep(1000);
 	  
   }
   
