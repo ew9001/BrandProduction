@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Product Details List">
-   <test name="Go through list of Url">
+<suite name="Search Content on Desktop">
+   <test name="Search Content on Desktop">
    
      
       
       <classes>
-         <class name="staging.templates.ProductGroup" />
+         <class name="staging.templates.SearchContent" />
       </classes>
       
    </test>

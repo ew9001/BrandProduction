@@ -1,0 +1,78 @@
+package staging.templates;
+
+public class ProductGroup extends QuickView {
+	
+	
+	
+	 while ((line = br.readLine()) != null) {
+	  	  
+	        System.out.println("The URL is " + counter);
+	        String [] nextLine = line.split(",");
+	        // nextLine[] is an array of values from the line
+	        System.out.println(nextLine[lineNumber]);
+	        url=nextLine[lineNumber];
+	        driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
+	        System.out.println("The URL is " + url);	
+	        System.out.println("Image Name " +name);
+	        driver.get(url);
+	       
+	       // for (int second = 0;; second++) {
+		    //	if (second >= 60);
+		    	//try { if ("Ã‚Â© 2014 Procter & Gamble".equals(driver.findElement(By.cssSelector("div.copyRights > div.text.mode1 > div")).getText())) break; } catch (Exception e) {}
+		    	//Thread.sleep(1000);
+		    //} changed
+	        
+	        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	  
+	        WebDriverWait wait = new WebDriverWait(driver, 15);
+	        WebElement element1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='menu-drop-down']")));
+	        
+	        
+	      //*[@id="menu-drop-down"]
+	   
+
+	        WebElement element = driver.findElement(By.xpath(".//*[@id='menu-drop-down']"));
+	        Actions action = new Actions(driver);
+	        
+	        
+	        action.moveToElement(element).perform();
+	        
+	        
+	        
+	        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	        name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "menu_dropdown.png";
+	        takeScreenPortrait(name);
+	        System.out.println("Image Name " +name);
+	        counter+=1;
+	        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	       
+	        
+	        Thread.sleep(5000);
+	        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	        
+	        
+	        WebElement element2 = driver.findElement((By.xpath("//img[@ src='images/nav-menu/menu-fresh-fish.jpg']")));
+	        Actions action2 = new Actions(driver);
+	        
+	        
+	        action.moveToElement(element).perform();
+	        
+	        name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "slide_1_hover.png";
+	        takeScreenPortrait(name);
+	        System.out.println("Image Name " +name);
+	        counter+=1;
+	       
+	        
+	        counter+=1;
+
+	      }
+
+}
