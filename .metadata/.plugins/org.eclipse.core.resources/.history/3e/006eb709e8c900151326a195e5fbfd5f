@@ -73,9 +73,8 @@ public class ProductGroup extends QuickView {
 	        url=nextLine[lineNumber];
 	        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	        System.out.println("The URL is " + url);	
-	        
-	        System.out.println("I went to URL  " + url);
 	        driver.get(url);
+	   
 	        setupSocial();
 	  	  getSocialCount();
 	  	  for(int i=0;i<socialCount;i++)
