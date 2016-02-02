@@ -71,10 +71,11 @@ public class ProductGroup extends QuickView {
 	        // nextLine[] is an array of values from the line
 	        System.out.println(nextLine[lineNumber]);
 	        url=nextLine[lineNumber];
-	        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	        driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
 	        System.out.println("The URL is " + url);	
+	        System.out.println("Image Name " +name);
 	        driver.get(url);
-	        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	        
 	        setupSocial();
 	  	  getSocialCount();
 	  	  for(int i=0;i<socialCount;i++)
