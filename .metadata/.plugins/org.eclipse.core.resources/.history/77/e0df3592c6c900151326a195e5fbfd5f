@@ -48,7 +48,6 @@ import org.testng.annotations.Test;
 public class ProductGroup extends QuickView {
 	public int lineNumber=0;
 	public String url,line;
-	@Test
 	public void productList() throws IOException, InterruptedException{
 		
 		  BufferedReader br =null;
