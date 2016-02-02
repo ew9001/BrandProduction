@@ -83,3 +83,6 @@ java -ea -classpath /Users/pktqa/Desktop/BrandProduction/test/target/test-classe
 
 !ENTRY com.android.ide.eclipse.adt 2 0 2016-02-02 11:01:05.601
 !MESSAGE No projects found for [/Users/pktqa/Desktop/BrandProduction/test/Search.xml]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-02-02 11:08:44.525
+!MESSAGE No projects found for [/Users/pktqa/Desktop/BrandProduction/test/ProductDetailsGroup.xml]
