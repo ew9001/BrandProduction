@@ -185,7 +185,10 @@ public class Desktop {
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		        
+		        name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "menu_dropdown.png";
+		        takeScreenPortrait(name);
+		        System.out.println("Image Name " +name);
+		        counter+=1;
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		       
 		        
@@ -200,13 +203,13 @@ public class Desktop {
 		        
 		    ///    action.moveToElement(element).perform();
 		        
-		        name=""+ browser +"_"+ counter + "_" + ".png";
+		        name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "slide_1_hover.png";
 		        takeScreenPortrait(name);
 		        System.out.println("Image Name " +name);
 		        counter+=1;
 		       
 		        
-		    
+		        counter+=1;
 
 		      }
 	
