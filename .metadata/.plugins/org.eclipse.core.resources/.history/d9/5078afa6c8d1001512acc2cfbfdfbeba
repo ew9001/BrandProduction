@@ -165,18 +165,18 @@ public class Desktop {
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		  
-		       // WebDriverWait wait = new WebDriverWait(driver, 15);
-		     //   WebElement element1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='menu-drop-down']")));
+		        WebDriverWait wait = new WebDriverWait(driver, 15);
+		        WebElement element1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='menu-drop-down']")));
 		        
 		        
 		      //*[@id="menu-drop-down"]
 		   
 
-		   //     WebElement element = driver.findElement(By.xpath(".//*[@id='menu-drop-down']"));
-		      //  Actions action = new Actions(driver);
+		        WebElement element = driver.findElement(By.xpath(".//*[@id='menu-drop-down']"));
+		        Actions action = new Actions(driver);
 		        
 		        
-		   //     action.moveToElement(element).perform();
+		        action.moveToElement(element).perform();
 		        
 		        
 		        
