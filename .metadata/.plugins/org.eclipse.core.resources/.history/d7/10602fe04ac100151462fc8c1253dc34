@@ -1,7 +1,0 @@
-package staging.templates;
-
-public class Product extends QuickView {
-	
-	public void variantName("UCQuickView_ProductVariants1_ddlVariantionSelector","ProductVariants2_ddlVariantionSelector");
-
-}

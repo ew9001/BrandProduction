@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Articles]">
   <test name="Articles(failed)">
     <classes>
-      <class name="shop.product.Articles">
+      <class name="staging.templates.LoopArticles">
         <methods>
           <include name="brandArticle"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- shop.product.Articles -->
+      </class> <!-- staging.templates.LoopArticles -->
     </classes>
   </test> <!-- Articles(failed) -->
 </suite> <!-- Failed suite [Articles] -->

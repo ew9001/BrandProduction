@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Suite" parallel="tests">
+  <test name="Firefox 42 MAC">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="version" value="42.0"/>
+  <parameter name="platform" value="MAC"/>
+    <classes>
+      <class name="cadilac.dare.UrlScreenshots"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Chrome 48 Windows 7">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="version" value="48.0"/>
+  <parameter name="platform" value="WINDOWS"/>
+    <classes>
+      <class name="cadilac.dare.UrlScreenshots"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Windows IE 10.0">
+  <parameter name="browser" value="IE"/>
+  <parameter name="version" value="10.0"/>
+  <parameter name="platform" value="Windows"/>
+    <classes>
+      <class name="cadilac.dare.UrlScreenshots"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Windows IE 11.0">
+  <parameter name="browser" value="IE"/>
+  <parameter name="version" value="11.0"/>
+  <parameter name="platform" value="Windows"/>
+    <classes>
+      <class name="cadilac.dare.UrlScreenshots"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,66 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+ 
+<suite name="Desktop Menu Click" verbose="1">
+    <parameter name="param" value="Test"/>
+    
+    
+    
+     
+        
+    
+    <test name="Desktop Windows 8 IE 10">
+        <parameter name="browser" value="browserWindows8IE10"/>
+        <classes>
+            <class name="global.screenshot.Desktop"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+     <test name="Desktop Yasomin Firefox 40 ">
+        <parameter name="browser" value="firefoxMAC"/>
+        <classes>
+            <class name="global.screenshot.Desktop"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+
+      <test name="Desktop Windows 7 IE 10">
+        <parameter name="browser" value="browserIE10"/>
+        <classes>
+            <class name="global.screenshot.Desktop"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+       <test name="Desktop Windows 7 Chrome">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="global.screenshot.Desktop"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+   
+    
+    
+</suite>

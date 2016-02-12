@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Article]">
+  <test name="Article(failed)">
+    <classes>
+      <class name="cadilac.mobile.Cart">
+        <methods>
+          <include name="loadBrowserOnDevice"/>
+        </methods>
+      </class> <!-- cadilac.mobile.Cart -->
+    </classes>
+  </test> <!-- Article(failed) -->
+</suite> <!-- Failed suite [Article] -->

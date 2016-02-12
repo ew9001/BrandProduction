@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Product]">
-  <test name="Product Details(failed)">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Articles]">
+  <test name="Articles(failed)">
     <classes>
-      <class name="staging.templates.AllProducts">
+      <class name="staging.templates.LoopArticles">
         <methods>
-          <include name="variantName"/>
+          <include name="brandArticle"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- staging.templates.AllProducts -->
+      </class> <!-- staging.templates.LoopArticles -->
     </classes>
-  </test> <!-- Product Details(failed) -->
-</suite> <!-- Failed suite [Product] -->
+  </test> <!-- Articles(failed) -->
+</suite> <!-- Failed suite [Articles] -->

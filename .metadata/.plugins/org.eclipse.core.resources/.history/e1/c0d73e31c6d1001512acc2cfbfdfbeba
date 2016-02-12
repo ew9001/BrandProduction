@@ -1,0 +1,5 @@
+package global.screenshot;
+
+public class Desktop {
+
+}

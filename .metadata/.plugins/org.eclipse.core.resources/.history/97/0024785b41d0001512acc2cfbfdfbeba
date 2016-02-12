@@ -1,0 +1,15 @@
+package citi.thankyou;
+
+import org.testng.annotations.Test;
+
+public class Cart {
+	
+	@Test
+	public void TestDrop()
+	{
+		
+		System.out.println("clean");
+		
+	}
+
+}

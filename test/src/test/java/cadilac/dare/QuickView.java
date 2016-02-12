@@ -506,7 +506,7 @@ public class QuickView {
   }
 
   
- @BeforeMethod
+
 
   public void beforeClass() throws InterruptedException, IOException {
 	  if (System.getProperty("Browser").equals("safari")) {

@@ -1,54 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="69" started-at="2016-02-01T20:15:45Z" finished-at="2016-02-01T20:15:45Z">
+  <suite name="Default suite" duration-ms="69" started-at="2016-02-10T21:40:51Z" finished-at="2016-02-10T21:40:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="69" started-at="2016-02-01T20:15:45Z" finished-at="2016-02-01T20:15:45Z">
-      <class name="staging.templates.AllProducts">
-        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:staging.templates.AllProducts@6611d7b8]" name="beforeClass" is-config="true" duration-ms="0" started-at="2016-02-01T15:15:45Z" finished-at="2016-02-01T15:15:45Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at staging.templates.QuickView.beforeClass(QuickView.java:564)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+    <test name="Default test" duration-ms="69" started-at="2016-02-10T21:40:51Z" finished-at="2016-02-10T21:40:51Z">
+      <class name="citi.thankyou.Cart">
+        <test-method status="PASS" signature="TestDrop()[pri:0, instance:citi.thankyou.Cart@63049cf]" name="TestDrop" duration-ms="15" started-at="2016-02-10T16:40:51Z" finished-at="2016-02-10T16:40:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="variantName()[pri:0, instance:staging.templates.AllProducts@6611d7b8]" name="variantName" duration-ms="0" started-at="2016-02-01T15:15:45Z" finished-at="2016-02-01T15:15:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variantName -->
-      </class> <!-- staging.templates.AllProducts -->
+        </test-method> <!-- TestDrop -->
+      </class> <!-- citi.thankyou.Cart -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
