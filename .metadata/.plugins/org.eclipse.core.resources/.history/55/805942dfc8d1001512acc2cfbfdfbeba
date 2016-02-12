@@ -61,6 +61,7 @@ public class Desktop {
 		String data2="" + local + "/" + "citi.csv";	
 		String myTitle;
 		String csvFileToRead;
+		String slide1 = "Today's Fresh Fish";
 	    String safe = "https://10.10.10.34:8080/job/TESTNG3/ws/PageLoads1";
 	  @Test(groups = {"create"})
 		@Parameters({"browser"})
