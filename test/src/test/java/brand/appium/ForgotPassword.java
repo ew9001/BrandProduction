@@ -28,7 +28,7 @@ public class ForgotPassword extends LoginTestCase{
 
 		takeScreenshot("forgot_password.png");
 
-		enterForgotPasswordConfirmationScreen("albert.golubev@pkt.com","11235");
+		enterForgotPasswordConfirmationScreen("aik1771@yahoo.com","11235");
 
 		waitElementsToAppear(15);
 
@@ -62,7 +62,7 @@ public class ForgotPassword extends LoginTestCase{
 		Thread.sleep(5000);
 		Thread.sleep(5000);
 		waitElementsToAppear(15);
-		loginUser("albert.golubev@pkt.com","zaq12wsx");
+		loginUser("aik1771@yahoo.com","zaq12wsx");
 		waitElementsToAppear(15);
 		Thread.sleep(5000);
 		waitForClickable("phsmartphonebody_0_labelvaluegrs_consumer[firstname]");

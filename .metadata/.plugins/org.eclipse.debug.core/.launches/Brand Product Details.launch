@@ -6,8 +6,8 @@
 <booleanAttribute key="M2_OFFLINE" value="false"/>
 <stringAttribute key="M2_PROFILES" value=""/>
 <listAttribute key="M2_PROPERTIES">
-<listEntry value="BrandUrl=http://www.daregreatly.com/explore"/>
-<listEntry value="suiteFile=GroupArticle.xml"/>
+<listEntry value="BrandUrl=http://author.bountyca.pgsitecore.com/en-ca"/>
+<listEntry value="suiteFile=AndroidPreferenceCenter.xml"/>
 <listEntry value="Browser=browserIE10"/>
 </listAttribute>
 <stringAttribute key="M2_RUNTIME" value="EMBEDDED"/>

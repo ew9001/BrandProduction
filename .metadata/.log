@@ -244,3 +244,39 @@ java.lang.NullPointerException
 
 !ENTRY com.android.ide.eclipse.adt 2 0 2016-02-12 15:25:38.448
 !MESSAGE No projects found for [/Users/pktqa/Desktop/BrandProduction/test/CitiGlobal.xml]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-02-22 15:24:18.801
+!MESSAGE No valid Android XML Editor Delegate found for file /test/ProductLanding.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-02-22 15:24:25.440
+!MESSAGE No valid Android XML Editor Delegate found for file /test/PreferenceCenter.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-02-22 15:24:36.955
+!MESSAGE No valid Android XML Editor Delegate found for file /test/MobilePreferenceCenter.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-02-22 15:24:43.380
+!MESSAGE No valid Android XML Editor Delegate found for file /test/CadilacDareGreatly.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-02-22 15:25:14.295
+!MESSAGE No valid Android XML Editor Delegate found for file /test/ProductDetailsGroup.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-02-22 15:25:23.975
+!MESSAGE No valid Android XML Editor Delegate found for file /test/WriteReview.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-02-22 15:26:30.213
+!MESSAGE No valid Android XML Editor Delegate found for file /test/AndroidPreferenceCenter.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-02-22 15:27:36.559
+!MESSAGE No projects found for [/Users/pktqa/Desktop/BrandProduction/test/AndroidPreferenceCenter.xml]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-02-22 15:27:53.563
+!MESSAGE No projects found for [/Users/pktqa/Desktop/BrandProduction/test/AndroidPreferenceCenter.xml]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-02-22 17:09:39.633
+!MESSAGE No valid Android XML Editor Delegate found for file /test/ExploreWidget.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-02-22 18:03:36.955
+!MESSAGE No valid Android XML Editor Delegate found for file /test/BountyCanadaEnglishArticles.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-02-22 18:05:18.492
+!MESSAGE No projects found for [/Users/pktqa/Desktop/BrandProduction/test/BountyCanadaEnglishArticles.xml]

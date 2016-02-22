@@ -199,8 +199,8 @@ public class Desktop {
 		        
 		        
 		    ///    action.moveToElement(element).perform();
-		        
-		        name=""+ browser +"_"+ counter + "_" + ".png";
+		        name=""+ browser+"/" + counter + "_" + ".png";
+		       
 		        takeScreenPortrait(name);
 		        System.out.println("Image Name " +name);
 		        counter+=1;
