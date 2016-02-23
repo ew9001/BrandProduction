@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.m2e.Maven2LaunchConfigurationType">
 <booleanAttribute key="M2_DEBUG_OUTPUT" value="false"/>
-<stringAttribute key="M2_GOALS" value="test"/>
+<stringAttribute key="M2_GOALS" value="clean test -X"/>
 <booleanAttribute key="M2_NON_RECURSIVE" value="false"/>
 <booleanAttribute key="M2_OFFLINE" value="false"/>
 <stringAttribute key="M2_PROFILES" value=""/>
 <listAttribute key="M2_PROPERTIES">
 <listEntry value="BrandUrl=http://author.bountyca.pgsitecore.com/en-ca"/>
-<listEntry value="suiteFile=AndroidPreferenceCenter.xml"/>
-<listEntry value="Browser=browserIE10"/>
+<listEntry value="suiteFile=BountyCanadaEnglishPreferenceCenter.xml"/>
+<listEntry value="Browser=windows7IE10"/>
 </listAttribute>
 <stringAttribute key="M2_RUNTIME" value="EMBEDDED"/>
 <booleanAttribute key="M2_SKIP_TESTS" value="false"/>

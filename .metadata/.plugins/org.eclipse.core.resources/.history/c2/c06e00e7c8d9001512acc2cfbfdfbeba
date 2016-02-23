@@ -66,7 +66,7 @@ public class PreferenceCenter {
 	//	@Parameters({"browser"})
 
 	  @BeforeMethod
-	  public void beforeClass() throws IOException, InterruptedException
+	  public void beforeClass(String browser) throws IOException, InterruptedException
 	  {	   
 		  
 		  
@@ -77,14 +77,14 @@ public class PreferenceCenter {
 			  driver=windows7IE10();
 			 
 			}
-		 else if (System.getProperty("Browser").equals("iPadMini")){
+		 else if (browser.equals("iPadMini")){
 			 driver=iPadMini();
 		 }
 		 
-		 else if (System.getProperty("Browser").equals("firefoxMac")){
+		 else if (browser.equals("firefoxMac")){
 			 driver=firerfoxMac();
 		 }
-		 else if (System.getProperty("Browser").equals("safari")){
+		 else if (browser.equals("safari")){
 			 driver=safari();
 		 }
 		}

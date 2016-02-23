@@ -1210,3 +1210,49 @@
 2016-02-22 19:37:26,198 [Worker-8633] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/main/resources
 2016-02-22 19:37:26,199 [Worker-8633] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-02-22 19:37:26,199 [Worker-8633] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/test/resources
+2016-02-22 19:49:22,852 [Worker-8635] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pktqa/Desktop/BrandProduction/test
+2016-02-22 19:49:22,852 [Worker-8635] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -DBrandUrl=http://author.bountyca.pgsitecore.com/en-ca -DsuiteFile=BountyCanadaEnglishPreferenceCenter.xml -DBrowser=safari  -B clean test
+2016-02-22 19:51:02,672 [Worker-8635] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-02-22 19:51:02,672 [Worker-8635] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/main/resources
+2016-02-22 19:51:02,673 [Worker-8635] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-02-22 19:51:02,673 [Worker-8635] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/test/resources
+2016-02-22 19:51:06,272 [Worker-8635] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pktqa/Desktop/BrandProduction/test
+2016-02-22 19:51:06,272 [Worker-8635] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -DBrandUrl=http://author.bountyca.pgsitecore.com/en-ca -DsuiteFile=BountyCanadaEnglishPreferenceCenter.xml -DBrowser=safari  -B clean test
+2016-02-22 19:57:12,499 [Worker-8635] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-02-22 19:57:12,500 [Worker-8635] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/main/resources
+2016-02-22 19:57:12,500 [Worker-8635] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-02-22 19:57:12,500 [Worker-8635] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/test/resources
+2016-02-22 19:57:38,520 [Worker-8647] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pktqa/Desktop/BrandProduction/test
+2016-02-22 19:57:38,520 [Worker-8647] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -DBrandUrl=http://author.bountyca.pgsitecore.com/en-ca -DsuiteFile=BountyCanadaEnglishPreferenceCenter.xml -DBrowser=windows7IE10  -B clean test
+2016-02-22 19:58:03,587 [Worker-8648] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-02-22 19:58:03,587 [Worker-8648] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/main/resources
+2016-02-22 19:58:03,588 [Worker-8648] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-02-22 19:58:03,588 [Worker-8648] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/test/resources
+2016-02-22 19:58:06,974 [Worker-8647] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pktqa/Desktop/BrandProduction/test
+2016-02-22 19:58:06,974 [Worker-8647] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -DBrandUrl=http://author.bountyca.pgsitecore.com/en-ca -DsuiteFile=BountyCanadaEnglishPreferenceCenter.xml -DBrowser=windows7IE10  -B clean test
+2016-02-22 19:58:34,551 [Worker-8641] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pktqa/Desktop/BrandProduction/test
+2016-02-22 19:58:34,552 [Worker-8641] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -DBrandUrl=http://author.bountyca.pgsitecore.com/en-ca -DsuiteFile=BountyCanadaEnglishPreferenceCenter.xml -DBrowser=windows7IE10  -B clean test
+2016-02-22 19:58:53,564 [Worker-8635] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pktqa/Desktop/BrandProduction/test
+2016-02-22 19:58:53,565 [Worker-8635] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -DBrandUrl=http://author.bountyca.pgsitecore.com/en-ca -DsuiteFile=BountyCanadaEnglishPreferenceCenter.xml -DBrowser=windows7IE10  -B clean test -X
+2016-02-22 19:59:51,406 [Worker-8651] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-02-22 19:59:51,406 [Worker-8651] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/main/resources
+2016-02-22 19:59:51,407 [Worker-8651] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-02-22 19:59:51,407 [Worker-8651] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/test/resources
+2016-02-22 19:59:55,911 [Worker-8647] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pktqa/Desktop/BrandProduction/test
+2016-02-22 19:59:55,912 [Worker-8647] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -DBrandUrl=http://author.bountyca.pgsitecore.com/en-ca -DsuiteFile=BountyCanadaEnglishPreferenceCenter.xml -DBrowser=windows7IE10  -B clean test -X
+2016-02-22 20:00:29,050 [Worker-8650] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-02-22 20:00:29,050 [Worker-8650] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/main/resources
+2016-02-22 20:00:29,052 [Worker-8650] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-02-22 20:00:29,052 [Worker-8650] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/test/resources
+2016-02-22 20:00:42,507 [Worker-8635] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pktqa/Desktop/BrandProduction/test
+2016-02-22 20:00:42,507 [Worker-8635] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -DBrandUrl=http://author.bountyca.pgsitecore.com/en-ca -DsuiteFile=BountyCanadaEnglishPreferenceCenter.xml -DBrowser=windows7IE10  -B clean test -X
+2016-02-22 20:00:59,879 [Worker-8654] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-02-22 20:00:59,879 [Worker-8654] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/main/resources
+2016-02-22 20:00:59,880 [Worker-8654] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-02-22 20:00:59,880 [Worker-8654] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/test/resources
+2016-02-22 20:01:03,797 [Worker-8651] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pktqa/Desktop/BrandProduction/test
+2016-02-22 20:01:03,797 [Worker-8651] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -DBrandUrl=http://author.bountyca.pgsitecore.com/en-ca -DsuiteFile=BountyCanadaEnglishPreferenceCenter.xml -DBrowser=windows7IE10  -B clean test -X
+2016-02-22 20:07:26,936 [Worker-8655] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-02-22 20:07:26,936 [Worker-8655] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/main/resources
+2016-02-22 20:07:26,937 [Worker-8655] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-02-22 20:07:26,937 [Worker-8655] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/test/resources

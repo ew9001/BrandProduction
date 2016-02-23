@@ -63,28 +63,28 @@ public class PreferenceCenter {
 		String local=(new java.io.File("").getAbsolutePath());
 		String myTitle;
 
-	//	@Parameters({"browser"})
+		@Parameters({"browser"})
 
-	  @BeforeMethod
-	  public void beforeClass() throws IOException, InterruptedException
+	  @BeforeTest
+	  public void beforeClass(String browser) throws IOException, InterruptedException
 	  {	   
 		  
 		  
 		  
 		  
 		  
-		 if (System.getProperty("Browser").equals("windows7IE10")) {
+		 if (browser.equals("windows7IE10")) {
 			  driver=windows7IE10();
 			 
 			}
-		 else if (System.getProperty("Browser").equals("iPadMini")){
+		 else if (browser.equals("iPadMini")){
 			 driver=iPadMini();
 		 }
 		 
-		 else if (System.getProperty("Browser").equals("firefoxMac")){
+		 else if (browser.equals("firefoxMac")){
 			 driver=firerfoxMac();
 		 }
-		 else if (System.getProperty("Browser").equals("safari")){
+		 else if (browser.equals("safari")){
 			 driver=safari();
 		 }
 		}

@@ -5,6 +5,7 @@
 /Users/pktqa/Desktop/BrandProduction/test/src/test/java/staging/templates/Products.java
 /Users/pktqa/Desktop/BrandProduction/test/src/test/java/staging/templates/SearchContent.java
 /Users/pktqa/Desktop/BrandProduction/test/src/test/java/staging/templates/AllProducts.java
+/Users/pktqa/Desktop/BrandProduction/test/src/test/java/bounty/local/PreferenceCenter.java
 /Users/pktqa/Desktop/BrandProduction/test/src/test/java/shop/product/NewTest.java
 /Users/pktqa/Desktop/BrandProduction/test/src/test/java/brand/appium/LoginTestCase.java
 /Users/pktqa/Desktop/BrandProduction/test/src/test/java/brand/test/MobilePreferenceCenter.java
@@ -17,9 +18,11 @@
 /Users/pktqa/Desktop/BrandProduction/test/src/test/java/cadilac/mobile/StartBrowser.java
 /Users/pktqa/Desktop/BrandProduction/test/src/test/java/cadilac/dare/QuickView.java
 /Users/pktqa/Desktop/BrandProduction/test/src/test/java/cadilac/dare/Articles.java
+/Users/pktqa/Desktop/BrandProduction/test/src/test/java/bounty/local/BounyPreferenceCenter.java
 /Users/pktqa/Desktop/BrandProduction/test/src/test/java/shop/product/Articles.java
-/Users/pktqa/Desktop/BrandProduction/test/src/test/java/shop/product/ProductDetails.java
+/Users/pktqa/Desktop/BrandProduction/test/src/test/java/bounty/local/BountyArticlePrint.java
 /Users/pktqa/Desktop/BrandProduction/test/src/test/java/shop/product/AllProducts.java
+/Users/pktqa/Desktop/BrandProduction/test/src/test/java/shop/product/ProductDetails.java
 /Users/pktqa/Desktop/BrandProduction/test/src/test/java/brand/test/WriteReviewCrest.java
 /Users/pktqa/Desktop/BrandProduction/test/src/test/java/brand/appium/ForgotPassword.java
 /Users/pktqa/Desktop/BrandProduction/test/src/test/java/project/facebook/CadilacDareGreatly.java

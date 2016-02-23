@@ -1,10 +1,15 @@
 brand/test/WriteReviewCrest.class
+global/screenshot/Desktop.class
+bounty/local/PreferenceCenter.class
 staging/templates/ProductGroup.class
 staging/templates/ProductDetailsPage.class
 shop/product/Products.class
+cadilac/mobile/Screenshot.class
+cadilac/mobile/Cart.class
 staging/templates/QuickView.class
 shop/product/ProductDetailsPage.class
 staging/templates/ProductDetails.class
+staging/templates/LoopArticles.class
 staging/templates/Articles.class
 brand/appium/LoginTestCase.class
 brand/test/AppTest.class
@@ -26,6 +31,7 @@ cadilac/dare/QuickView.class
 brand/test/BuyNowSelect.class
 project/facebook/startBrowser.class
 brand/test/BuyNow.class
+bounty/local/BountyArticlePrint.class
 staging/templates/SearchContent.class
 project/facebook/CadilacDareGreatly.class
 brand/appium/ForgotPassword.class
@@ -33,5 +39,7 @@ brand/appium/ValidLogin.class
 cadilac/dare/UrlScreenshots.class
 shop/product/Articles.class
 webdriver/test/brandPreferenceCenter.class
+cadilac/mobile/StartBrowser.class
 shop/product/QuickView.class
 citi/thankyou/Screenshot.class
+bounty/local/BounyPreferenceCenter.class
