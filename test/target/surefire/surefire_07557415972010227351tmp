@@ -1,0 +1,6 @@
+#surefire_0
+#Mon Mar 07 11:49:38 EST 2016
+user.dir=/Users/pktqa/Desktop/BrandProduction/test
+localRepository=/Users/pktqa/.m2/repository
+suiteFile=ImagePath.xml
+basedir=/Users/pktqa/Desktop/BrandProduction/test

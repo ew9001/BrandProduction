@@ -28,13 +28,13 @@ public class ImagePath {
 	    String line="";
 	    String url;
 	    int counter =1;
-	    String csvFileToRead;
+	    String csvFileToRead = null;
 		String local=(new java.io.File("").getAbsolutePath());
 		String data="" + local + "/" + "crestpdp.csv";	
 	    File dir = new File("/users/agolubev1/Desktop/RondAndroid");
 	
 	    int lineNumber = 0;
-	    csvFileToRead = data;
+
 	    br = new BufferedReader(new FileReader(csvFileToRead));  
 	    
 	    while ((line = br.readLine()) != null) {

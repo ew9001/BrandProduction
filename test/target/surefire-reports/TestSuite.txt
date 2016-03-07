@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.695 sec <<< FAILURE! - in TestSuite
-getPath(cadilac.dare.ImagePath)  Time elapsed: 7.191 sec  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.419 sec <<< FAILURE! - in TestSuite
+getPath(cadilac.dare.ImagePath)  Time elapsed: 4.127 sec  <<< FAILURE!
 java.lang.NullPointerException
 	at cadilac.dare.ImagePath.getPath(ImagePath.java:38)
 

@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="ImagePath" duration-ms="7208" started-at="2016-03-07T16:44:23Z" finished-at="2016-03-07T16:44:31Z">
+  <suite name="ImagePath" duration-ms="4135" started-at="2016-03-07T16:48:29Z" finished-at="2016-03-07T16:48:34Z">
     <groups>
     </groups>
-    <test name="Image Path" duration-ms="7208" started-at="2016-03-07T16:44:23Z" finished-at="2016-03-07T16:44:31Z">
+    <test name="Image Path" duration-ms="4135" started-at="2016-03-07T16:48:29Z" finished-at="2016-03-07T16:48:34Z">
       <class name="cadilac.dare.ImagePath">
-        <test-method status="FAIL" signature="getPath()[pri:0, instance:cadilac.dare.ImagePath@5f3b2fdc]" name="getPath" duration-ms="7174" started-at="2016-03-07T11:44:23Z" finished-at="2016-03-07T11:44:31Z">
+        <test-method status="FAIL" signature="getPath()[pri:0, instance:cadilac.dare.ImagePath@5dfeaee5]" name="getPath" duration-ms="4119" started-at="2016-03-07T11:48:29Z" finished-at="2016-03-07T11:48:34Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
