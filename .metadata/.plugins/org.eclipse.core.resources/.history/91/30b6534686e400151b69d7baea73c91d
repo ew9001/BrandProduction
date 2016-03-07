@@ -59,7 +59,7 @@ public class ImagePath {
     	     {
     	    	 System.out.println(ImageUrl); //will get you all the image urls on the page
     	     }
-    	     counter+=1;
+    	     
     	     
     	}
     }
