@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="ImagePath" duration-ms="6816" started-at="2016-03-07T14:27:56Z" finished-at="2016-03-07T14:28:03Z">
+    <groups>
+    </groups>
+    <test name="Image Path" duration-ms="6816" started-at="2016-03-07T14:27:56Z" finished-at="2016-03-07T14:28:03Z">
+      <class name="cadilac.dare.ImagePath">
+        <test-method status="PASS" signature="getPath()[pri:0, instance:cadilac.dare.ImagePath@35ddb0af]" name="getPath" duration-ms="6804" started-at="2016-03-07T09:27:56Z" finished-at="2016-03-07T09:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPath -->
+      </class> <!-- cadilac.dare.ImagePath -->
+    </test> <!-- Image Path -->
+  </suite> <!-- ImagePath -->
+</testng-results>

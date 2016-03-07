@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [20 servers Test]">
+  <parameter name="browser" value="firefoxMAC"/>
+  <test name="Firefox 20 serevers(failed)">
+    <parameter name="browser" value="firefoxMAC"/>
+    <groups>
+      <run>
+        <include name="create"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="event.listener.ClassWithListener">
+        <methods>
+          <include name="beforeClass" invocation-numbers="0"/>
+          <include name="afterMethod_takeScreenshot"/>
+        </methods>
+      </class> <!-- event.listener.ClassWithListener -->
+    </classes>
+  </test> <!-- Firefox 20 serevers(failed) -->
+</suite> <!-- Failed suite [20 servers Test] -->

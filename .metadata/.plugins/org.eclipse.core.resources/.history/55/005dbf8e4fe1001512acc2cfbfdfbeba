@@ -1,0 +1,45 @@
+package event.listener;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.testng.annotations.Test;
+
+import com.test.listeners.WebDriverListener;
+import com.test.webdriver.MyRemoteWebDriver;
+import com.test.webdriver.MyWebElement;
+
+public class ClassWithListener {
+	@Test
+	public void testMethod() throws MalformedURLException {
+		DesiredCapabilities dc = new DesiredCapabilities();
+		dc.setBrowserName(DesiredCapabilities.firefox().getBrowserName());
+		MyRemoteWebDriver rwd = new MyRemoteWebDriver(new URL(MyConstants.URL.toString()), dc);
+		EventFiringWebDriver efwd = new EventFiringWebDriver(rwd);
+		WebDriverListener eventListener = new WebDriverListener(rwd);
+		efwd.register(eventListener);
+		efwd.get("http://www.linkedin.com/");
+		MyWebElement element = new MyWebElement(rwd.findElement(By.name("search")));
+		element.click();
+		efwd.quit();
+	}
+
+}
+
+enum MyConstants {
+	URL("http://localhost:4444/wd/hub");
+	private String value;
+
+	private MyConstants(String value) {
+		this.value = value;
+	}
+
+	public String toString() {
+		return this.value;
+	}
+}
+
+

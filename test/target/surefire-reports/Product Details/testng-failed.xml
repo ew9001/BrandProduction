@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Product Details]">
+  <test name="text(failed)">
+    <classes>
+      <class name="mobile.canada.ProductDetailsMobile">
+        <methods>
+          <include name="run"/>
+          <include name="loadBrowserOnDevice"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- mobile.canada.ProductDetailsMobile -->
+    </classes>
+  </test> <!-- text(failed) -->
+</suite> <!-- Failed suite [Product Details] -->

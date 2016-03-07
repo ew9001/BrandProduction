@@ -1,8 +1,0 @@
-#surefire_0
-#Mon Feb 22 20:01:07 EST 2016
-BrandUrl=http\://author.bountyca.pgsitecore.com/en-ca
-user.dir=/Users/pktqa/Desktop/BrandProduction/test
-localRepository=/Users/pktqa/.m2/repository
-suiteFile=BountyCanadaEnglishPreferenceCenter.xml
-basedir=/Users/pktqa/Desktop/BrandProduction/test
-Browser=windows7IE10

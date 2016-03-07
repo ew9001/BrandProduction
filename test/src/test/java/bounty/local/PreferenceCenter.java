@@ -104,6 +104,7 @@ public class PreferenceCenter {
 		 caps.setCapability("browserstack.local", "true");
 		 caps.setCapability("browserstack.selenium_version", "2.47.1");
 		 caps.setCapability("acceptSslCerts", "true");
+		 
 		  driver = new RemoteWebDriver(new URL(URL), caps);
 	      browser="windows7IE10";
 	      driver.get(System.getProperty("BrandUrl"));
@@ -239,7 +240,7 @@ public class PreferenceCenter {
 		   name=""+ folder+"/" + brand +"_"+ browser +"_" + "invalid_login.png";
 	  	System.out.println("Let me click on login");
 	   driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
-	   driver.findElement(By.className("event_profile_login")).click();
+	   driver.findElement(By.className(" sign-style newsletter")).click();
 	   
 	  
 	   

@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Social Media">
-   <test name="Facebook Twitter Google plus">
+<suite name="20 servers Test">
    
-     
-      
-      <classes>
-         <class name="cadilac.dare.Articles" />
-      </classes>
-      
-   </test>
-   
-     
-   
+    <test name="Firefox 20 serevers">
+        <parameter name="browser" value="firefoxMAC"/>
+        <classes>
+           <class name="event.listener.ClassWithListener" />
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
    
    
    

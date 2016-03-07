@@ -1,0 +1,6 @@
+package event.listener;
+
+public interface WebDriverListener {
+	this.webDriver = webDriver;
+
+}

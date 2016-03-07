@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Social Media]">
+  <test name="Facebook Twitter Google plus(failed)">
+    <classes>
+      <class name="bounty.local.LocalPreferenceCenter">
+        <methods>
+          <include name="loginAndLogout"/>
+        </methods>
+      </class> <!-- bounty.local.LocalPreferenceCenter -->
+    </classes>
+  </test> <!-- Facebook Twitter Google plus(failed) -->
+</suite> <!-- Failed suite [Social Media] -->

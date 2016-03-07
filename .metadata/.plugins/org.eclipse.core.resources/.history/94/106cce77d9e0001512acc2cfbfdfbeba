@@ -1,0 +1,33 @@
+package event.listener;
+
+public WebDriverListener(WebDriver webDriver){
+    this.webDriver = webDriver;
+}
+
+public void beforeNavigateTo(String url, WebDriver driver) {
+
+}
+
+public void afterNavigateTo(String url, WebDriver driver) {
+    final CountDownLatch latch = new CountDownLatch(1);
+    KeyEventDispatcher dispatcher = new KeyEventDispatcher() {
+        // Anonymous class invoked from EDT
+        public boolean dispatchKeyEvent(KeyEvent e) {
+            if (e.getKeyCode() == KeyEvent.VK_SPACE)
+                latch.countDown();
+            return false;
+        }
+    };
+    KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(dispatcher);
+    try {
+        latch.await();
+    } catch (InterruptedException e1) {
+        // TODO Auto-generated catch block
+        e1.printStackTrace();
+    }  // current thread waits here until countDown() is called
+    KeyboardFocusManager.getCurrentKeyboardFocusManager().removeKeyEventDispatcher(dispatcher);
+    System.out.println(this.webDriver.getTitle());
+    // TODO Auto-generated method stub
+
+        }
+}

@@ -1,0 +1,89 @@
+package load.dare;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.Assert;
+
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.Augmenter;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+public class Load {  
+  
+  private WebDriver driver;  
+
+
+  @BeforeClass
+  @org.testng.annotations.Parameters(value={"browser","version","platform"})
+  public void setUp(String browser, String version, String platform) throws Exception {
+    DesiredCapabilities capability = new DesiredCapabilities();
+    capability.setCapability("platform",platform);
+    capability.setCapability("browserName", browser);
+    capability.setCapability("browserVersion", version);
+    capability.setCapability("project", "P1");
+    capability.setCapability("build", "1.0");
+    driver = new RemoteWebDriver(
+      new URL("http://zaqwsx1:Fs54nwmULt7BaSTosZxi@hub.browserstack.com/wd/hub"),
+      capability);
+  }  
+
+  @Test
+  public void testSimple() throws Exception {
+    driver.get("http://dare:P@blicis123@dare-greatly-qa.pkt-tech.com/dont-you-dare");
+    System.out.println("Page title is: " + driver.getTitle());
+    String baseUrl = "http://dare:P@blicis123@dare-greatly-qa.pkt-tech.com";
+   
+    driver.get(baseUrl + "/dont-you-dare");
+    driver.findElement(By.id("daretofirst")).clear();
+    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    driver.findElement(By.id("daretofirst")).sendKeys("WOW YES WE MADE IT GO NY 1234");
+    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    driver.findElement(By.id("submit_first")).click();
+    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    driver.findElement(By.id("sumbit_no_image")).click();
+    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    driver.findElement(By.id("first")).click();
+    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    driver.findElement(By.id("first")).clear();
+    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    driver.findElement(By.id("first")).sendKeys("ANDREJ-KRISTOF");
+    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    driver.findElement(By.id("last")).click();
+    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    driver.findElement(By.id("last")).clear();
+    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    driver.findElement(By.id("last")).sendKeys("GOLDERNEAS");
+    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    driver.findElement(By.id("daretodo")).click();
+    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    driver.findElement(By.id("daretodo")).clear();
+    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    driver.findElement(By.id("daretodo")).sendKeys(driver.getTitle() + "ASJFOJFOEWFJPWGJPWOEGJOWPEGJPOEWJGOPWEGJWEPGW\nWEGJWEGOPEWJGWEPGOWEG\nWEGJWEOJGOPWEJGWOEPGJEWOPGJWE\nGWEGJWEGPOJWEOPGJEEEWWEEERWER");
+    driver.findElement(By.id("submitToDb")).click();
+    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    driver = new Augmenter().augment(driver);
+    File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+    try {
+      FileUtils.copyFile(srcFile, new File("Screenshot.png"));
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
+
+  @AfterClass  
+  public void tearDown() throws Exception {  
+    driver.quit();  
+  }
+}

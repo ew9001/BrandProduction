@@ -1,0 +1,133 @@
+package bounty.local;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Rotatable;
+import org.openqa.selenium.ScreenOrientation;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.HasInputDevices;
+import org.openqa.selenium.interactions.Keyboard;
+import org.openqa.selenium.remote.Augmenter;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+public class MetaDataColletcion {
+	
+
+	 private SoftAssert softAssert = new SoftAssert(); 
+	 public  WebDriver driver = new FirefoxDriver();
+	  public String browser;
+	  public String folder = "screenshots";
+	  public String fail,error,url,name,actualText,id,actual,brand;
+	  public String local=(new java.io.File("").getAbsolutePath());
+		String data="" + local + "/" + "pdp.csv";	
+		String csvFileToRead;
+	 
+
+		static String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
+	    int counter=1;
+	
+		
+
+	//	@Parameters({"browser"})
+
+	    
+	    public static void main(String[] args) {
+
+	    	MetaDataColletcion obj = new MetaDataColletcion();
+	    	obj.run();
+
+	      }
+	   @Test
+	    public void run() {
+	    	String local=(new java.io.File("").getAbsolutePath());
+			String data1="" + local + "/" + "pdp.csv";	
+	    	String csvFile = "/Users/mkyong/Downloads/GeoIPCountryWhois.csv";
+	    	BufferedReader br = null;
+	    	String line = "";
+	    	String cvsSplitBy = ",";
+
+	    	try {
+
+	    		br = new BufferedReader(new FileReader(data1));
+	    		while ((line = br.readLine()) != null) {
+
+	    		        // use comma as separator
+	    			String[] data = line.split(cvsSplitBy);
+
+	    			System.out.println("Country [code= " + data[0] 
+	                                     + " , name=" + data[1] + "]");
+
+	    		}
+
+	    	} catch (FileNotFoundException e) {
+	    		e.printStackTrace();
+	    	} catch (IOException e) {
+	    		e.printStackTrace();
+	    	} finally {
+	    		if (br != null) {
+	    			try {
+	    				br.close();
+	    			} catch (IOException e) {
+	    				e.printStackTrace();
+	    			}
+	    		}
+	    	}
+
+	    	System.out.println("Done");
+	      }
+	    
+		
+
+	 public void assertText()
+	 {
+	 	 System.out.println("Assert that the text is present " +actual);
+		  
+	 	softAssert.assertEquals(actualText,actual,"Failed to assert an element");
+		
+
+
+
+
+	 }
+
+
+	}
+
+
+
