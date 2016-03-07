@@ -29,8 +29,6 @@ public class ImagePath {
 	    String url;
 	    int counter =1;
 	    String csvFileToRead = null;
-		String local=(new java.io.File("").getAbsolutePath());
-		String data="" + local + "/" + "qacadillac.csv";	
 	    File dir = new File("/users/agolubev1/Desktop/RondAndroid");
 	
 	    int lineNumber = 0;
@@ -53,7 +51,7 @@ public class ImagePath {
     	     String ImageUrl=imageFromList.getAttribute("src");
     	     boolean  b = ImageUrl.startsWith("http://d1i4fq3vfx2gix.cloudfront.net"); 
     	     
-    	     System.out.println("The Page " + driver.getTitle() + "looks good");
+    	   
     	    
     	     if (false)
     	     {

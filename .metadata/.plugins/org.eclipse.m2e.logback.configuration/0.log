@@ -1357,3 +1357,33 @@
 2016-03-07 09:27:43,234 [Worker-1222] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/test/resources
 2016-03-07 09:27:53,977 [Worker-1231] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pktqa/Desktop/BrandProduction/test
 2016-03-07 09:27:53,977 [Worker-1231] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -DsuiteFile=ImagePath.xml  -B test
+2016-03-07 09:41:13,320 [Worker-1235] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-07 09:41:13,320 [Worker-1235] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/main/resources
+2016-03-07 09:41:13,321 [Worker-1235] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-07 09:41:13,321 [Worker-1235] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/test/resources
+2016-03-07 09:41:20,354 [Worker-1237] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pktqa/Desktop/BrandProduction/test
+2016-03-07 09:41:20,354 [Worker-1237] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -DsuiteFile=ImagePath.xml  -B test
+2016-03-07 09:48:49,170 [Worker-1239] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-07 09:48:49,170 [Worker-1239] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/main/resources
+2016-03-07 09:48:49,171 [Worker-1239] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-07 09:48:49,171 [Worker-1239] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/test/resources
+2016-03-07 09:48:56,884 [Worker-1237] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pktqa/Desktop/BrandProduction/test
+2016-03-07 09:48:56,884 [Worker-1237] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -DsuiteFile=ImagePath.xml  -B test
+2016-03-07 09:49:33,543 [Worker-1244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-07 09:49:33,543 [Worker-1244] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/main/resources
+2016-03-07 09:49:33,545 [Worker-1244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-07 09:49:33,545 [Worker-1244] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/test/resources
+2016-03-07 09:49:36,910 [Worker-1216] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/pktqa/Desktop/BrandProduction/test
+2016-03-07 09:49:36,910 [Worker-1216] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -DsuiteFile=ImagePath.xml  -B test
+2016-03-07 10:05:07,123 [Worker-1248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-07 10:05:07,123 [Worker-1248] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/main/resources
+2016-03-07 10:05:07,124 [Worker-1248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-07 10:05:07,124 [Worker-1248] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/test/resources
+2016-03-07 10:05:44,145 [Worker-1247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-07 10:05:44,146 [Worker-1247] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/main/resources
+2016-03-07 10:05:44,147 [Worker-1247] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-07 10:05:44,147 [Worker-1247] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/test/resources
+2016-03-07 11:20:51,584 [Worker-1267] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-07 11:20:51,595 [Worker-1267] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/main/resources
+2016-03-07 11:20:51,596 [Worker-1267] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-07 11:20:51,596 [Worker-1267] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/pktqa/Desktop/BrandProduction/test/src/test/resources
